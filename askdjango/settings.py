@@ -83,7 +83,7 @@ DATABASES = {
          'NAME': 'pj_db',
          'USER': 'root',
          'PASSWORD': 'kkddhh77887788@',
-         'HOST': '127.0.0.1',
+         'HOST': '0.0.0.0',
          'PORT': '3306',
 	}
 }
