@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>흠...</title>
+    </head>
+    <body>
+        <h1>과학프로젝트</h1>
+        <h3>대전지역의 날씨예보</h3>
+
+        <div class="weather_list">
+            <h4>헤더 정보</h4>
+            {% for data in header %}
+            <p>
+                {{ data.update_year }}년 {{ data.update_month }}월 {{ data.update_date }}일 {{ data.update_time }}시
+                <br>에업로드 되었습니다.
+            </p>
+            {% endfor %}
+
+            <h3>대전광역시 유성구 날씨</h3>
+            {% for data in gu0 %}
+                <p>
+                    {{ data.num }}행 <br>
+                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
+                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
+                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.num }}% 습도:{{ data.humi }}%
+                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
+                    <br>
+                </p>
+            {% endfor %}
+            <h3>대전광역시 서구 날씨</h3>
+            {% for data in gu1 %}
+                <p>
+                    {{ data.num }}행 <br>
+                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
+                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
+                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.num }}% 습도:{{ data.humi }}%
+                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
+                    <br>
+                </p>
+            {% endfor %}
+            <h3>대전광역시 중구 날씨</h3>
+            {% for data in gu2 %}
+                <p>
+                    {{ data.num }}행 <br>
+                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
+                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
+                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.num }}% 습도:{{ data.humi }}%
+                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
+                    <br>
+                </p>
+            {% endfor %}
+            <h3>대전광역시 대덕구 날씨</h3>
+            {% for data in gu3 %}
+                <p>
+                    {{ data.num }}행 <br>
+                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
+                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
+                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.num }}% 습도:{{ data.humi }}%
+                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
+                    <br>
+                </p>
+            {% endfor %}
+            <h3>대전광역시 동구 날씨</h3>
+            {% for data in gu4 %}
+                <p>
+                    {{ data.num }}행 <br>
+                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
+                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
+                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.num }}% 습도:{{ data.humi }}%
+                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
+                    <br>
+                </p>
+            {% endfor %}
+         </div>
+    </body>
+</html>
