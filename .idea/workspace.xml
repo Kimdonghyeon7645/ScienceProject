@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61b1259f-a8a5-4971-99b8-2cd664256e53" name="Default Changelist" comment="" />
+    <list default="true" id="61b1259f-a8a5-4971-99b8-2cd664256e53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scienceproject/templates/scienceproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/scienceproject/templates/scienceproject/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scienceproject/templates/scienceproject/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="162" column="7" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
+            <state relative-caret-position="209">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
@@ -71,6 +75,9 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -88,6 +95,7 @@
     <option name="width" value="990" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -136,6 +144,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="C:/PycharmProjects/과학 프로젝트/finally_DB_uploader.py" />
   </component>
   <component name="RunDashboard">
@@ -201,7 +210,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -270,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scienceproject/templates/scienceproject/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="162" column="7" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
+        <state relative-caret-position="209">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
