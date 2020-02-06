@@ -28,6 +28,7 @@ SECRET_KEY = '%n3z(+b=jdz+99@c$m@2topc6@t5vvu4c^r1ezy=1f)nv8*lu='
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']
+# pythonanywhere 에서 allowed_hosts 관련 에러에 대한 해결 코드 
 
 
 # Application definition
@@ -76,14 +77,29 @@ WSGI_APPLICATION = 'askdjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-
+# 아래는 로컬 DB에 대한 코드입니다.
+"""
 DATABASES = {
     'default': {
          'ENGINE': 'django.db.backends.mysql',
          'NAME': 'pj_db',
          'USER': 'root',
          'PASSWORD': 'kkddhh77887788@',
-         'HOST': '0.0.0.0',
+         'HOST': '127.0.0.1',
+         'PORT': '3306',
+	}
+}
+"""
+
+# 서버 배포시 pythonanywhere는 이와 같은 코드로 DB를 접근해주셔야됩니다.
+# pythonanywhere상에서 로컬 DB와 다른 가상환경의 DB를 만들어 주셔야 합니다!
+DATABASES = {
+    'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'NAME': 'bosal$pj_db',
+         'USER': 'bosal',
+         'PASSWORD': 'kkddhh77887788@',
+         'HOST': 'bosal.mysql.pythonanywhere-services.com',
          'PORT': '3306',
 	}
 }
