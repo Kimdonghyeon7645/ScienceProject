@@ -1,309 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교생활에 날씨를 더하다</title>
+</head>
+<style>
+    body{
+        background-image: url("static/images/rain.svg");
+        color: #cccccc;
+        letter-spacing: 2px;
+    }
+    header{
+            background-color:#000000;
+            padding-bottom: 30px;
+             opacity: 0.77;
+
+             position: relative;
+             right: 7px;
+             bottom: 20px;
+    }
+
+    .upload_time
+    {
+        position: relative;
+        left: 40px;
+        bottom: 5px;
+        font-size: 30px
+
+
+    }
+    p{
+        display: inline;
+
+    }
+    .area
+    {
+        position: relative;
+        left: 130px;
+        top: 15px;
+        font-size: 50px;
+    }
+    .area_s
+    {
+        position: relative;
+        left: 200px;
+
+    }
+    .area_S_s
+    {
+        position: relative;
+        left: 230px;
+    }
+    .none
+    {
+        position: relative;
+        top: 30px;
+        border-bottom: 1px solid #CCCCCC;
+    }
+    select {
+        font-size: 15px;
+        color: #cccccc;
+
+  width: 200px; /* 원하는 너비설정 */
+  padding: 10px 30px; /* 여백으로 높이 설정 */
+  font-family: inherit;  /* 폰트 상속 */
+  background: url(t.svg) no-repeat 95% 50%; /* 네이티브 화살표 대체 */
+  border: 1px solid #cccccc;
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.middle
+{
+    position: relative;
+    left: 678px;
+    top: 25px;
+    font-size: 150px;
+}
+
+.o
+{
+    position: relative;
+    left: 748px;
+    bottom: 205px;
+    font-size: 100px;
+}
+.middle-mood
+{
+    position: relative;
+    left: 668px;
+    bottom: 100px;
+    font-size: 50px;
+
+}
+
+.middle-Temp
+{
+    position: relative;
+    left: 658px;
+    bottom: 70px;
+    font-size: 30px;
+
+}
+
+.mood_this_w
+{
+    position: relative;
+    left: 588px;
+    bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 3px;
+
+}
+footer{
+    position: absolute;
+
+left: 0;
+
+bottom: 0;
+
+width: 100%;
+
+}
+table{
+    position: relative;
+    top: 25px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  opacity: 0.77;
+
+  }
+
+
+.U_td
+{
+
+
+    font-size: 30px;
+    padding: 10px;
+    padding-right: 100px;
+}
+.last_upload{
+
+    font-size: 10px;
+    position: relative;
+    right: 150px;
+    top: 20px;
+
+
+}
+.dupang_e_gun_jom{
+    font-size: 10px;
+}
+.dlc
+{
+    text-align: center      ;
+}
+</style>
+<body>
+    <header>
+        <p class="upload_time">2020.02.03</p>
+        <p class="last_upload">마지막업로드 : 2020.02.03 17:00</p>
+
+        <p class="area">대전광역시 유성구</p>
+        <p class="area_s">
+            <select>
+                <option>대전광역시</option>
+            </select>
+        </p>
+        <p class="area_S_s">
+            <select>
+                <option>유성구</option>
+                <option>중구</option>
+                <option>대덕구</option>
+                <option>서구</option>
+                <option>동구</option>
+            </select>
+        </p>
+        <div class="none"></div>
+    </header>
+
+    <content>
+            <div class="middle">
+                3</div>
+                <p class="o">°</p>
+            <div class="middle-mood">흐림</div>
+            <p class="middle-Temp">-5° /  2°</p>
+            <div class="mood_this_w">조금 쌀쌀해요</div>
+
+    </content>
+
+    <footer>
+         <table>
+             <tr>
+                 <td id="L_temp" class="U_td">
+                     최저기온
+                     <div class="dlc">5º</div>
+                 </td>
+                 <td id="H_temp" class="U_td">
+                    최고기온
+                    <div class="dlc">27º</div>
+
+                </td>
+                 <td id="smbdo" class="U_td">
+                    습도
+                    <div class="dlc">15<p class="dupang_e_gun_jom">%</p> </div>
+
+                </td>
+                  <td id="rain" class="U_td">
+                    예상강수량
+                    <div class="dlc">                   10<p class="dupang_e_gun_jom">mm</p>
+                    </div>
+
+                </td>
+                <td id="china_ddong" class="U_td">
+                    미세먼지
+                    <div class="dlc">                   20<p class="dupang_e_gun_jom">㎍/㎥</p>
+                    </div>
+
+                </td>
+                <td id="china_Small_ddong" class="U_td">
+                    초미세먼지
+                    <div class="dlc"> 5<P class="dupang_e_gun_jom">㎍/㎥</P></div>
+
+                </td>
+             </tr>
+         </table>
+
+
+    </footer>
+
+</body>
+</html>
 <!--<!doctype html>-->
 <!--<html>-->
 <!--    <head>-->
 <!--        <meta charset="utf-8">-->
-<!--        <title>이게~? 퍼블리싱도 못하는게 까불어~!</title>-->
+<!--        <title>조별은 이름뿐인 개인 프로젝트</title>-->
 <!--    </head>-->
-<!--    <style>-->
-<!--        body{-->
-<!--            background-color: #fdfdfd;-->
-<!--            padding: 20px-->
-<!--        }-->
-<!--        none-html-->
-<!--        {-->
-<!--            display: none;-->
-<!--        }-->
-
-<!--        .weather_list-->
-<!--        {-->
-<!--            border: 1px #cacaca  solid;-->
-
-<!--            padding-left: 20px;-->
-
-<!--        }-->
-<!--        #header-->
-<!--        {-->
-<!--              font-weight: bold;-->
-<!--              font-size: 30px;-->
-<!--              padding-bottom: 50px;-->
-<!--              border-bottom: 1px gray solid;-->
-<!--        }-->
-<!--        em{-->
-<!--            font-weight: 300;-->
-<!--            padding-left: 15px;-->
-<!--        }-->
-<!--        .content{-->
-
-<!--        }-->
-<!--        .area{-->
-<!--            display: none;-->
-<!--        }-->
-<!--        .list{-->
-<!--            display: inline;-->
-<!--            position: relative;-->
-<!--            bottom: 60px;-->
-<!--            padding-right: 10px;-->
-<!--            padding-bottom: 5px;-->
-<!--            border-bottom: 3px inherit solid;-->
-
-<!--            transition: border 0.1s-->
-<!--        }-->
-<!--        .list:hover{-->
-<!--            background-color: #fffff5;-->
-<!--            border-bottom: 3px skyblue solid;-->
-<!--            cursor: pointer;-->
-<!--        }-->
-<!--        table{-->
-<!--            display:block;-->
-<!--            box-sizing: border-box;-->
-<!--            border-radius: 3px;-->
-<!--            border: 1px #aeaeae solid;-->
-
-<!--        }-->
-<!--        td{-->
-
-<!--            padding: 5px;-->
-<!--        }-->
-<!--        .temp_img-->
-<!--        {-->
-<!--            width: 30px;-->
-<!--            height: 30px;-->
-<!--        }-->
-
-<!--        .after_time{-->
-
-<!--        }-->
-<!--    </style>-->
-
 <!--    <body>-->
-<!--        </script>-->
-<!--        <script type="text/javascript">-->
-
-<!--        function    yousanggu_change()-->
-<!--         {-->
-<!--            document.getElementById('donggu').style.display = 'none';-->
-<!--            document.getElementById('seogu').style.display = 'none';-->
-<!--            document.getElementById('jounggu').style.display = 'none';-->
-<!--            document.getElementById('daedeokgu').style.display = 'none';-->
-
-<!--            document.getElementById('yousanggu').style.display = 'block';-->
-<!--         }-->
-<!--         function    donggu_change()-->
-<!--         {-->
-<!--            document.getElementById('yousanggu').style.display = 'none';-->
-<!--            document.getElementById('seogu').style.display = 'none';-->
-<!--            document.getElementById('jounggu').style.display = 'none';-->
-<!--            document.getElementById('daedeokgu').style.display = 'none';-->
-<!--              document.getElementById('donggu').style.display = 'block';-->
-<!--         }-->
-<!--         function    seogu_change()-->
-<!--         {-->
-<!--            document.getElementById('donggu').style.display = 'none';-->
-<!--            document.getElementById('yousanggu').style.display = 'none';-->
-<!--            document.getElementById('jounggu').style.display = 'none';-->
-<!--            document.getElementById('daedeokgu').style.display = 'none';-->
-<!--              document.getElementById('seogu').style.display = 'block';-->
-<!--         }-->
-<!--         function    jounggu_change()-->
-<!--         {-->
-<!--            document.getElementById('donggu').style.display = 'none';-->
-<!--            document.getElementById('seogu').style.display = 'none';-->
-<!--            document.getElementById('yousanggu').style.display = 'none';-->
-
-<!--            document.getElementById('daedeokgu').style.display = 'none';-->
-<!--             document.getElementById('jounggu').style.display = 'block';-->
-<!--         }-->
-<!--         function    daedeokgu_change()-->
-<!--         {-->
-<!--            document.getElementById('yousanggu').style.display = 'none';-->
-<!--            document.getElementById('donggu').style.display = 'none';-->
-<!--            document.getElementById('seogu').style.display = 'none';-->
-<!--            document.getElementById('jounggu').style.display = 'none';-->
-<!--             document.getElementById('daedeokgu').style.display = 'block';-->
-<!--         }-->
-<!--        </script>-->
+<!--        <h1>과학프로젝트</h1>-->
+<!--        <h3>대전지역의 날씨예보</h3>-->
 
 <!--        <div class="weather_list">-->
-
-<!--            <p id="header">-->
-<!--                과학프로젝트-->
-<!--               <em>2020년 2월 3일 17시에 업로드 되었습니다.</em>-->
+<!--            <h4>헤더 정보</h4>-->
+<!--            {% for data in header %}-->
+<!--            <p>-->
+<!--                {{ data.update_year }}년 {{ data.update_month }}월 {{ data.update_date }}일 {{ data.update_time }}시-->
+<!--                <br>에업로드 되었습니다.-->
 <!--            </p>-->
-<!--            <div class="content">-->
-<!--                <p class="list" onclick="yousanggu_change()" id="yousanggu_list" >유성구</p>-->
-<!--                <p class="list" id="seogu_list" onclick="seogu_change()">서구</p>-->
-<!--                <p class="list" id="jounggu_list "  onclick="jounggu_change()">중구</p>-->
-<!--                <p class="list" id="daedeokgu_list" onclick="daedeokgu_change()">대덕구</p>-->
-<!--                <p class="list" id="donggu_list" onclick="donggu_change()">동구</p>-->
+<!--            {% endfor %}-->
 
-<!--                    <p class="area" >-->
-<!--                    <table id="yousanggu">-->
-<!--                        <th>-->
-
-<!--                            <td class="after_time">      1시간후  </td>-->
-<!--                            <td class="time">       1시 </td>-->
-<!--                            <td class="temp"><img class="temp_img"src="https://image.flaticon.com/icons/svg/578/578113.svg" />  :1℃ </td>-->
-<!--                            <td class="most_high_temp">     최고온도:1 </td>-->
-<!--                            <td class="most_low_temp">      최저온도:1</td>-->
-<!--                            <td class="mood">    기상상황:1 </td>-->
-<!--                            <td class="rain">    예상 강수확률:1% </td>-->
-<!--                            <td class="smb">    습도:1%</td>-->
-<!--                            <td class="dust">    미세먼지:1  </td>-->
-<!--                            <td class="samll_dust">초미세먼지:1</td>-->
-<!--                        </th>-->
-<!--                    </table>-->
-<!--                    </p>-->
-
-<!--                   <p class="area" >-->
-<!--                    <table id="seogu">-->
-<!--                        <th>-->
-
-<!--                            <td class="after_time">      1시간후  </td>-->
-<!--                            <td class="time">       1시 </td>-->
-<!--                            <td class="temp"><img class="temp_img"src="https://image.flaticon.com/icons/svg/578/578113.svg" />  :1℃ </td>-->
-<!--                            <td class="most_high_temp">     최고온도:1 </td>-->
-<!--                            <td class="most_low_temp">      최저온도:1</td>-->
-<!--                            <td class="mood">    기상상황:1 </td>-->
-<!--                            <td class="rain">    예상 강수확률:1% </td>-->
-<!--                            <td class="smb">    습도:1%</td>-->
-<!--                            <td class="dust">    미세먼지:1  </td>-->
-<!--                            <td class="samll_dust">초미세먼지:1</td>-->
-<!--                        </th>-->
-<!--                    </table>-->
-<!--                    </p>-->
-
-
-<!--                <p class="area" >-->
-<!--                    <table id="jounggu">-->
-<!--                        <th>-->
-
-<!--                            <td class="after_time">      1시간후  </td>-->
-<!--                            <td class="time">       1시 </td>-->
-<!--                            <td class="temp"><img class="temp_img"src="https://image.flaticon.com/icons/svg/578/578113.svg" />  :1℃ </td>-->
-<!--                            <td class="most_high_temp">     최고온도:1 </td>-->
-<!--                            <td class="most_low_temp">      최저온도:1</td>-->
-<!--                            <td class="mood">    기상상황:1 </td>-->
-<!--                            <td class="rain">    예상 강수확률:1% </td>-->
-<!--                            <td class="smb">    습도:1%</td>-->
-<!--                            <td class="dust">    미세먼지:1  </td>-->
-<!--                            <td class="samll_dust">초미세먼지:1</td>-->
-<!--                        </th>-->
-<!--                    </table>-->
-<!--                    </p>-->
-<!--                    </p>-->
-<!--                <p class="area" >-->
-<!--                    <table id="daedeokgu">-->
-<!--                        <th>-->
-
-<!--                            <td class="after_time">      1시간후  </td>-->
-<!--                            <td class="time">       1시 </td>-->
-<!--                            <td class="temp"><img class="temp_img"src="https://image.flaticon.com/icons/svg/578/578113.svg" />  :1℃ </td>-->
-<!--                            <td class="most_high_temp">     최고온도:1 </td>-->
-<!--                            <td class="most_low_temp">      최저온도:1</td>-->
-<!--                            <td class="mood">    기상상황:1 </td>-->
-<!--                            <td class="rain">    예상 강수확률:1% </td>-->
-<!--                            <td class="smb">    습도:1%</td>-->
-<!--                            <td class="dust">    미세먼지:1  </td>-->
-<!--                            <td class="samll_dust">초미세먼지:1</td>-->
-<!--                        </th>-->
-<!--                    </table>-->
-<!--                    </p>-->
-<!--                <p class="area" >-->
-<!--                    <table id="donggu">-->
-<!--                        <th>-->
-
-<!--                            <td class="after_time">      1시간후  </td>-->
-<!--                            <td class="time">       1시 </td>-->
-<!--                            <td class="temp"><img class="temp_img"src="https://image.flaticon.com/icons/svg/578/578113.svg" />  :1℃ </td>-->
-<!--                            <td class="most_high_temp">     최고온도:1 </td>-->
-<!--                            <td class="most_low_temp">      최저온도:1</td>-->
-<!--                            <td class="mood">    기상상황:1 </td>-->
-<!--                            <td class="rain">    예상 강수확률:1% </td>-->
-<!--                            <td class="smb">    습도:1%</td>-->
-<!--                            <td class="dust">    미세먼지:1  </td>-->
-<!--                            <td class="samll_dust">초미세먼지:1</td>-->
-<!--                        </th>-->
-<!--                    </table>-->
-<!--                    </p>-->
-<!--            </div>-->
+<!--            <h3>대전광역시 유성구 날씨</h3>-->
+<!--            {% for data in gu0 %}-->
+<!--                <p>-->
+<!--                    {{ data.num }}행 <br>-->
+<!--                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>-->
+<!--                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}-->
+<!--                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%-->
+<!--                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}-->
+<!--                    <br>-->
+<!--                </p>-->
+<!--            {% endfor %}-->
+<!--            <h3>대전광역시 서구 날씨</h3>-->
+<!--            {% for data in gu1 %}-->
+<!--                <p>-->
+<!--                    {{ data.num }}행 <br>-->
+<!--                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>-->
+<!--                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}-->
+<!--                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%-->
+<!--                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}-->
+<!--                    <br>-->
+<!--                </p>-->
+<!--            {% endfor %}-->
+<!--            <h3>대전광역시 중구 날씨</h3>-->
+<!--            {% for data in gu2 %}-->
+<!--                <p>-->
+<!--                    {{ data.num }}행 <br>-->
+<!--                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>-->
+<!--                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}-->
+<!--                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%-->
+<!--                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}-->
+<!--                    <br>-->
+<!--                </p>-->
+<!--            {% endfor %}-->
+<!--            <h3>대전광역시 대덕구 날씨</h3>-->
+<!--            {% for data in gu3 %}-->
+<!--                <p>-->
+<!--                    {{ data.num }}행 <br>-->
+<!--                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>-->
+<!--                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}-->
+<!--                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%-->
+<!--                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}-->
+<!--                    <br>-->
+<!--                </p>-->
+<!--            {% endfor %}-->
+<!--            <h3>대전광역시 동구 날씨</h3>-->
+<!--            {% for data in gu4 %}-->
+<!--                <p>-->
+<!--                    {{ data.num }}행 <br>-->
+<!--                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>-->
+<!--                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}-->
+<!--                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%-->
+<!--                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}-->
+<!--                    <br>-->
+<!--                </p>-->
+<!--            {% endfor %}-->
 <!--         </div>-->
 <!--    </body>-->
 <!--</html>-->
-
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>과학프로젝트</title>
-    </head>
-    <body>
-        <h1>과학프로젝트</h1>
-        <h3>대전지역의 날씨예보</h3>
-
-        <div class="weather_list">
-            <h4>헤더 정보</h4>
-            {% for data in header %}
-            <p>
-                {{ data.update_year }}년 {{ data.update_month }}월 {{ data.update_date }}일 {{ data.update_time }}시
-                <br>에업로드 되었습니다.
-            </p>
-            {% endfor %}
-
-            <h3>대전광역시 유성구 날씨</h3>
-            {% for data in gu0 %}
-                <p>
-                    {{ data.num }}행 <br>
-                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
-                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
-                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%
-                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
-                    <br>
-                </p>
-            {% endfor %}
-            <h3>대전광역시 서구 날씨</h3>
-            {% for data in gu1 %}
-                <p>
-                    {{ data.num }}행 <br>
-                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
-                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
-                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%
-                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
-                    <br>
-                </p>
-            {% endfor %}
-            <h3>대전광역시 중구 날씨</h3>
-            {% for data in gu2 %}
-                <p>
-                    {{ data.num }}행 <br>
-                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
-                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
-                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%
-                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
-                    <br>
-                </p>
-            {% endfor %}
-            <h3>대전광역시 대덕구 날씨</h3>
-            {% for data in gu3 %}
-                <p>
-                    {{ data.num }}행 <br>
-                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
-                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
-                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%
-                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
-                    <br>
-                </p>
-            {% endfor %}
-            <h3>대전광역시 동구 날씨</h3>
-            {% for data in gu4 %}
-                <p>
-                    {{ data.num }}행 <br>
-                    업로드시간으로부터{{ data.time_difference }}시간후 {{ data.hour }}시 온도:{{ data.temp }}℃ <br>
-                    최고온도:{{ data.day_high_temp }} 최저온도:{{ data.day_low_temp }}
-                    기상상황:{{ data.weather_eng }} 예상 강수확률:{{ data.rain_persent }}% 습도:{{ data.humi }}%
-                    미세먼지:{{ data.fine_dust }} 초미세먼지:{{ data.small_fine_dust }}
-                    <br>
-                </p>
-            {% endfor %}
-         </div>
-    </body>
-</html>
