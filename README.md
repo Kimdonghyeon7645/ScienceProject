@@ -22,10 +22,10 @@
 ## 실제 웹 링크 - 
 http://bosal.pythonanywhere.com/
 ### 웹 캡쳐 -
-<img src="/readme_img/1.png" width="450px" height="300px" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
-<img src="/readme_img/2.png" width="450px" height="300px" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
-<img src="/readme_img/3.png" width="450px" height="300px" title="시간별컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
-<img src="/readme_img/4.png" width="450px" height="300px" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/1.png" width="450px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/2.png" width="450px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/3.png" width="450px" height="auto" title="시간별컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/4.png" width="450px" height="auto" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
 
 (pythonanywhere를 활용했으며, 프로젝트로 처음 장고와 원격배포를 해봤기에 많이 어리숙합니다.
 버전업한다면, DB업데이트가 수동이 아닌 자동으로 되게하며, 반응형 웹으로 구현할 예정입니다.)
