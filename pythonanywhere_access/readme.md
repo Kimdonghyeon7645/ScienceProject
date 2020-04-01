@@ -6,7 +6,7 @@
 맨 처음으로 pythonanywhere 원격 db를 파이썬 코드로 연결하고, 업로드 하는 과정이 필요하다.
 
 <details>
-  <summary>error 도장깨기의 흔적...</summary>
+  <summary> - error 도장깨기의 흔적... (누르면 펼쳐져요) - </summary>
   
   ```
   2020-03-31 13:28:08,610| ERROR   | Secsh channel 0 open FAILED: open failed: Administratively prohibited
