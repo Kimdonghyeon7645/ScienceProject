@@ -42,8 +42,9 @@
   
   > 사실 이게 뭔문젠지 몰라서, ssh 연결에 대해서 (포트 바인딩등) 공부하고, /etc/ssh/sshd_config 설정에서 삽질.
   
-  
 </details>  
+
+***
 
 현재 timed out 에러에 걸리는 문제에 봉착.
 
@@ -71,6 +72,7 @@ https://help.pythonanywhere.com/pages/AccessingMySQLFromOutsidePythonAnywhere/
 
 비밀번호 오류등 인자값을 잘못 넘기면, 접근이 꼬여서 에러가 나는데, 
 pythonanywhere에서 이럴경우 연속적인 연결시도로 암호를 해독하는 것을 방지하기 위해 액세스를 거부.
+(1번은 몰라도, 두번 접근에 오류를 되면 액세스가 일시적으로 거부됨.)
 
 > 참고 : https://www.pythonanywhere.com/forums/topic/7558/
 
