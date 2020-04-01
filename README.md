@@ -4,6 +4,10 @@
 2019년 2학기말에 시작한 프로젝트 였고, 5인 프로젝트입니다.
   #### 조별프로젝트기에 노션을 이용해서 소통했고, 브레인 스토밍과 개발 과정까지 공유했습니다.
   https://www.notion.so/Science_Project-9c3b5deffd7446eda3b27296d446757e
+  
+### 2020-4-1) 크롤링과 ssh활용한 DB 업로드 자동화를 개발하고 있습니다.
+자세한 내용은 <a href="#versionUp">아랫 부분에서 덧붙였습니다.</a>
+
 ***
 ### 개발목표 - 
 우리학교의 등하교시간, 아침운동시간의 날씨정보와 날씨정보로 아침운동확률도 예측하는 웹사이트
@@ -29,3 +33,22 @@ http://bosal.pythonanywhere.com/
 
 (pythonanywhere를 활용했으며, 프로젝트로 처음 장고와 원격배포를 해봤기에 많이 어리숙합니다.
 버전업한다면, DB업데이트가 수동이 아닌 자동으로 되게하며, 반응형 웹으로 구현할 예정입니다.)
+
+***
+
+## ver 2, 크롤링, DB 업로드 자동화<a name="versionUp"></a>
+(2020.3.31.~)
+pythonanywhere의 database를 python script로 접근, db를 자동으로 업데이트 하는 코드 + 크롤링 자동화까지 개발중입니다.  
+친절하게도 pythonanywhere에서 스크립트 기능을 제공하는데,  
+불친절하게도 db 접근시 생기는 오류에 대해서 대충 명시해서, 구글링으로 스텍오버플로우등을 찾아다니며 삽질하고 있습니다. 
+
+` 혼자이면서, sshtunnel모듈과 ssh연결의 기본지식이 없다 보니까 많이 애먹고 있습니다;; `
+
+2일간 하루종일 매달릴 시간이 있어서, 현재 문제 원인을 알았습니다.   
+(문법 오류는 고쳤고, 잘못된 접근으로 인한 pythonanywhere에서의 차단과 그때문에 timed out이 뜨는것 같습니다.)
+
+> 크게 도움된 문헌 : https://www.pythonanywhere.com/forums/topic/7558/
+
+그외의 문제 해결과정에 대해서 자세한 내용은, pythonanywhere_access/ 폴더를 참고하시면 되겠습니다. 
+
+<a href="https://github.com/Kimdonghyeon7645/ScienceProject/tree/master/pythonanywhere_access">바로가기</a>
