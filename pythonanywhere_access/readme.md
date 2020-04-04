@@ -80,62 +80,81 @@
   
   이에 대해 신중하게 코드를 고쳐서 시도하면 될듯.
   
+  ***
+  
+  ### 2020-4-2
+  하루종일 삽질하다가 이제야 원인 분석,
+  
+  > https://www.pythonanywhere.com/forums/topic/11396/
+  
+  2일동안 한 것을 허무하게 만드는 한문단...
+  
+  ```
+  Ah, that would explain it. 
+  PythonAnywhere MySQL servers aren't directly accessible from the public Internet, for security. 
+  As you have a paid account, you can access your server indirectly using an SSH tunnel
+  -- there's documentation on how to do that here.
+  ```
+  
+  요약하자면, 보안상의 문제때문에 로컬 머신에서 PythonAnywhere MySQL servers에 접근할 수 없다...   
+  유료계정일 경우에만 ssh tunnel을 이용해서 간접적으로 접근할 수 있었다.
+  
+  허무했지만 일단 이유를 찾았으니까 pythonanywhere 콘솔로 스크립트 파일을 돌렸는데,  
+  얼마지나지 않아서 뒷통수를 맞았따...
+  
+  > https://www.pythonanywhere.com/forums/topic/15007/
+  
+  보안상의 문제때문에 스크립트 pythonanywhere 상에서 함부로 다른 링크에 접근하는 것이 불가능 했다...   
+  이또한 무료계정에만 해당되며, 유료계정은 이런 제한없이 링크에 접근할 수 있다. 
+  
+  이때문에 크롤링으로 requests.get(url) 하는 부분에서 뜬금없는 403에러가 나타났다....
+  
+  ---
+  
+  그래도 알아보니, white list라고 무료계정에서 pythonanywhere 상으로 접근할 수 있는 링크 리스트를 제공하며,    
+  원한다면 white list 에 없는 링크를 추가해달라고 요청할 수 있는 것을 알아냈다.
+  
+  > white list 링크 : https://www.pythonanywhere.com/whitelist/
+  
+  대신에 아무 링크나 추가해줄수 있는 것이 아니고, 공용, 공식 api 같은 것만 추가할 수 있다고 했다.    
+  그래서 영어 실력을 모두 짜내서, (구글 번역기로) 포럼 + 피드백에 요청을 보냈다.  
+  
+  -> 애초에 유료 계정이였으면 이런 저런 오류 하나없이 접근할 수 있었다는 사실이 드러났다...   
+  -> 근데 무료계정으로 pythonanywhere를 악용할 수 있기에 이런 제한은 이해가 된다. 
+  
+  이제 남은것은 답변을 기다리거나(포럼을 참고하면 1~2일 정도에 답변이 오는걸 알수 있었다),   
+  white list에 이미 있는 날씨 사이트로 새로운 스크립트 파일을 작성한다든지(크롤링부터 DB업로드 코드를 새로 짜야된다.),   
+  ㄴ 시도해 봤는데 크롤링 부분에서 셀레니움, requests와 header설정까지 추가했는데도 접근에 에러가 뜬다... 보류...  
+  
+  크롤링 자동화는 포기하고, DB업로드만 스크립트로 자동으로 하기로 목표를 변경하거나,
+  ㄴ 이럴 경우엔 안하니만 못할 수도 있다. 애초에 크롤링한 파일을 만드는 것이 수동이라면 원래랑 다를께 없기에...
+  
+  등이 있다.  
+  (주변에 웹 전문가가 정말 있었으면 좋았을 것같다...)
+  
+  ***
+  
+  일단 너무 많이 시간을 썼으니까 보류하고,  
+  밀렸던 파이썬, 웹 문법 정리와 과제, 블로그 포스팅을 해야겠다. (아맞다 토익공부)
+  (2020-4-2)
+  
 </details>  
 
 ***
 
-### 현위치(2020-4-2)
-하루종일 삽질하다가 이제야 원인 분석,
+## 해결 2020-4-2
 
-> https://www.pythonanywhere.com/forums/topic/11396/
+결국 해결했다. 포럼에서 관리자가 당일에 답변해줬고, 다행이 미숙한 영어실력으로 피드백을 보낸것을  
+이해해서 화이트리스트에 내가 원하는 링크 1개를 추가했다.  
 
-2일동안 한 것을 허무하게 만드는 한문단...
+다만 다른 하나는 api를 이용하지 않으면 안된다고 했다. (한번더 물어봤는데 안된다한다.)
 
-```
-Ah, that would explain it. 
-PythonAnywhere MySQL servers aren't directly accessible from the public Internet, for security. 
-As you have a paid account, you can access your server indirectly using an SSH tunnel
--- there's documentation on how to do that here.
-```
+그래도 그부분은 서브콘텐츠 정보를 크롤링해오는 링크였기에, 임시방편으로 대처하고 스크립트를 수정하고  
+정상실행까지 여러번 디버깅했더니, 결국 정상종료, DB엔 정상 업데이트가 됬다.
 
-요약하자면, 보안상의 문제때문에 로컬 머신에서 PythonAnywhere MySQL servers에 접근할 수 없다...   
-유료계정일 경우에만 ssh tunnel을 이용해서 간접적으로 접근할 수 있었다.
+와...
 
-허무했지만 일단 이유를 찾았으니까 pythonanywhere 콘솔로 스크립트 파일을 돌렸는데,  
-얼마지나지 않아서 뒷통수를 맞았따...
-
-> https://www.pythonanywhere.com/forums/topic/15007/
-
-보안상의 문제때문에 스크립트 pythonanywhere 상에서 함부로 다른 링크에 접근하는 것이 불가능 했다...   
-이또한 무료계정에만 해당되며, 유료계정은 이런 제한없이 링크에 접근할 수 있다. 
-
-이때문에 크롤링으로 requests.get(url) 하는 부분에서 뜬금없는 403에러가 나타났다....
-
----
-
-그래도 알아보니, white list라고 무료계정에서 pythonanywhere 상으로 접근할 수 있는 링크 리스트를 제공하며,    
-원한다면 white list 에 없는 링크를 추가해달라고 요청할 수 있는 것을 알아냈다.
-
-> white list 링크 : https://www.pythonanywhere.com/whitelist/
-
-대신에 아무 링크나 추가해줄수 있는 것이 아니고, 공용, 공식 api 같은 것만 추가할 수 있다고 했다.    
-그래서 영어 실력을 모두 짜내서, (구글 번역기로) 포럼 + 피드백에 요청을 보냈다.  
-
--> 애초에 유료 계정이였으면 이런 저런 오류 하나없이 접근할 수 있었다는 사실이 드러났다...   
--> 근데 무료계정으로 pythonanywhere를 악용할 수 있기에 이런 제한은 이해가 된다. 
-
-이제 남은것은 답변을 기다리거나(포럼을 참고하면 1~2일 정도에 답변이 오는걸 알수 있었다),   
-white list에 이미 있는 날씨 사이트로 새로운 스크립트 파일을 작성한다든지(크롤링부터 DB업로드 코드를 새로 짜야된다.),   
-ㄴ 시도해 봤는데 크롤링 부분에서 셀레니움, requests와 header설정까지 추가했는데도 접근에 에러가 뜬다... 보류...  
-
-크롤링 자동화는 포기하고, DB업로드만 스크립트로 자동으로 하기로 목표를 변경하거나,
-ㄴ 이럴 경우엔 안하니만 못할 수도 있다. 애초에 크롤링한 파일을 만드는 것이 수동이라면 원래랑 다를께 없기에...
-
-등이 있다.  
-(주변에 웹 전문가가 정말 있었으면 좋았을 것같다...)
+크롤링, DB 업데이트 자동화는 그렇게 끝났다.
 
 ***
 
-일단 너무 많이 시간을 썼으니까 보류하고,  
-밀렸던 파이썬, 웹 문법 정리와 과제, 블로그 포스팅을 해야겠다. (아맞다 토익공부)
-(2020-4-2)
