@@ -268,7 +268,7 @@
     <content style="z-index: 1;">
         <span class="mood">
             {% for data in gu0 %}
-                {% if data.hour == 6 and data.time_difference < 24 %}
+                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                     {{ data.weather_kor }}
                 {% endif %}
             {% endfor %}
@@ -276,7 +276,7 @@
     <span class="temp_Property">
         <span class="temp">
             {% for data in gu0 %}
-                {% if data.hour == 6 and data.time_difference < 24 %}
+                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                     {{ data.temp }}<span style="font-size: 50px; position: relative; bottom: 55%">º</span>
                 {% endif %}
             {% endfor %}
@@ -285,7 +285,7 @@
         <span class="ULtemp">
             <span class="Ltemp">
                 {% for data in gu0 %}
-                {% if data.hour == 6 and data.time_difference < 24 %}
+                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                     {% if data.day_high_temp == -999 %}
                         <span style="font-size: 35px;">알수없음</span>º
                     {% else %}
@@ -296,7 +296,7 @@
             </span>
             <span class="Utemp">
                 {% for data in gu0 %}
-                {% if data.hour == 6 and data.time_difference < 24 %}
+                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                     {% if data.day_low_temp == -999 %}
                         <span style="font-size: 35px;">알수없음</span>º
                     {% else %}
@@ -311,7 +311,7 @@
         <span class="middle_Property">
             <span  id="rain">
                 {% for data in gu0 %}
-                {% if data.hour == 6 and data.time_difference < 24 %}
+                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                     {{ data.rain_persent }}<span style="font-size: 15px;">%</span><div style="font-size: 20px;" style="font-size: 20px;">강수확률</div>
                 {% endif %}
                 {% endfor %}
@@ -319,7 +319,7 @@
 
             <span  id="morning_excercise">
                 {% for data in gu0 %}
-                {% if data.hour == 6 and data.time_difference < 24 %}
+                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                     {% if data.rain_persent >= 70 %}
                         2<span style="font-size: 15px;">%</span><div style="font-size: 20px;">아침운동</div>
                     {% elif data.temp < -3 %}
@@ -351,7 +351,7 @@
 
             <span  id="humidity">
                 {% for data in gu0 %}
-                {% if data.hour == 6 and data.time_difference < 24 %}
+                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                     {{ data.fine_dust }}<span style="font-size: 15px;">단계</span><div style="font-size: 20px;">미세먼지</div>
                 {% endif %}
                 {% endfor %}
@@ -360,7 +360,7 @@
         </span>
         <div class="boolean_of_ms">
             {% for data in gu0 %}
-                {% if data.hour == 6 and data.time_difference < 24 %}
+                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                 <span style="font-size: 30px;">
                     {% if data.rain_persent >= 70 %}
                         비가 올 날씨네요 :D 실내운동 확정!
@@ -406,7 +406,7 @@
                     <div>
                         <div class="content_w">
                             {% for data in gu0 %}
-                                {% if data.hour == 6 and data.time_difference < 24 %}
+                                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                                     {% if data.weather_kor == "맑음" %}
                                         <span>이번등교</span><span><img src="static/img/sunny.svg"></span>{{ data.fine_dust }}
                                     {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
@@ -440,7 +440,7 @@
                         </div>
                         <div class="content_w">
                             {% for data in gu0 %}
-                                {% if data.hour == 6 and data.time_difference > 24 %}
+                                {% if data.hour >= 5 and data.hour <= 8 and data.time_difference > 24 %}
                                     {% if data.weather_kor == "맑음" %}
                                         <span>다음등교</span><span><img src="static/img/sunny.svg"></span>{{ data.fine_dust }}
                                     {% elif data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
@@ -480,7 +480,7 @@
             <span class="back">
                 <span class="title">세부 날씨</span>
                 {% for data in gu0 %}
-                    {% if data.hour == 6 and data.time_difference < 24 %}
+                    {% ifdata.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                         <table>
                             <tr>
                                 <td>예측시간<div class="middle_content">{{data.hour}}<span style="font-size:15px">시</span></div></td>
