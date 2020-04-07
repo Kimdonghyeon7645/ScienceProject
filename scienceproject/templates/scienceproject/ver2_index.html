@@ -480,7 +480,7 @@
             <span class="back">
                 <span class="title">세부 날씨</span>
                 {% for data in gu0 %}
-                    {% ifdata.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
+                    {% if data.hour >= 5 and data.hour <= 8 and data.time_difference < 24 %}
                         <table>
                             <tr>
                                 <td>예측시간<div class="middle_content">{{data.hour}}<span style="font-size:15px">시</span></div></td>
