@@ -55,6 +55,11 @@ pythonanywhere의 database를 python script로 접근, db를 자동으로 업데
 
 <a href="https://github.com/Kimdonghyeon7645/ScienceProject/tree/master/pythonanywhere_access">바로가기</a>
 
+### 결과
+
+![image](https://user-images.githubusercontent.com/48408417/79047064-65c6a800-7c4f-11ea-97f3-4f62ac262987.png)
+
+
 ***
 
 ## backup?
@@ -81,3 +86,4 @@ pythonanywhere의 database를 python script로 접근, db를 자동으로 업데
 
 덕분에 깃허브의 공포의 쓴맛을 오랜만에 만났고, 더욱이 지식이 늘었습니다.   
 그리고 다음부터 모르는 건, 특히 아이디와 비번을 입력해야 되는 것은 함부로 안할 것 같습니다. ^^;;
+
