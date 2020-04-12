@@ -1,6 +1,8 @@
 # ScienceProject
 ## 과학프로젝트, 날씨에 학교를 더하다
 
+![화면](https://user-images.githubusercontent.com/48408417/79071603-98d46e80-7d17-11ea-9e33-9983a033374f.gif)
+
 2019년 2학기말에 시작한 프로젝트 였고, 5인 프로젝트입니다.
   #### 조별프로젝트기에 노션을 이용해서 소통했고, 브레인 스토밍과 개발 과정까지 공유했습니다.
   https://www.notion.so/Science_Project-9c3b5deffd7446eda3b27296d446757e
@@ -57,12 +59,10 @@ pythonanywhere의 database를 python script로 접근, db를 자동으로 업데
 
 ### 결과
 
-![image](https://user-images.githubusercontent.com/48408417/79047064-65c6a800-7c4f-11ea-97f3-4f62ac262987.png)
+<img src="https://user-images.githubusercontent.com/48408417/79047064-65c6a800-7c4f-11ea-97f3-4f62ac262987.png" width="450px" height="auto" title="결과화면" alt="프로젝트웹사이트캡처"></img><br/>
 
 
 ***
-
-
 
 <details>
   <summary>4월 6일자 노트</summary>
