@@ -55,7 +55,6 @@ pythonanywhere의 database를 python script로 접근, db를 자동으로 업데
 
 문제 해결과정(삽질)에 대해서 자세한 내용은, pythonanywhere_access/ 폴더를 참고하시면 되겠습니다. 
 
-<a href="https://github.com/Kimdonghyeon7645/ScienceProject/tree/master/pythonanywhere_access">바로가기</a>
 
 ### 결과
 
