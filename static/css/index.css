@@ -3,7 +3,7 @@
     margin: 0px;    
 }
 html{
-    background-image: url('../img/rain.svg');
+    background-image: url("static '/img/rain.svg'");
     background-attachment: fixed;
     background-size: cover;
 

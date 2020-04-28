@@ -77,8 +77,7 @@ WSGI_APPLICATION = 'askdjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-# 아래는 로컬 DB에 대한 코드입니다.
-"""
+# 아래는 로컬 DB에 대한 코드
 DATABASES = {
     'default': {
          'ENGINE': 'django.db.backends.mysql',
@@ -89,20 +88,19 @@ DATABASES = {
          'PORT': '3306',
 	}
 }
-"""
 
-# 서버 배포시 pythonanywhere는 이와 같은 코드로 DB를 접근해주셔야됩니다.
-# pythonanywhere상에서 로컬 DB와 다른 가상환경의 DB를 만들어 주셔야 합니다!
-DATABASES = {
-    'default': {
-         'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'bosal$pj_db',
-         'USER': 'bosal',
-         'PASSWORD': 'kkddhh77887788@',
-         'HOST': 'bosal.mysql.pythonanywhere-services.com',
-         'PORT': '3306',
-	}
-}
+
+# 서버 배포시 pythonanywhere는 이와 같은 코드로 DB를 접근해야됨. (pythonanywhere상에선 로컬 DB와 다른 가상환경의 DB)!
+# DATABASES = {
+#     'default': {
+#          'ENGINE': 'django.db.backends.mysql',
+#          'NAME': 'bosal$pj_db',
+#          'USER': 'bosal',
+#          'PASSWORD': 'kkddhh77887788@',
+#          'HOST': 'bosal.mysql.pythonanywhere-services.com',
+#          'PORT': '3306',
+# 	}
+# }
 
 
 # Password validation
@@ -143,6 +141,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATTCFILES_DIRS = [
+    STATIC_ROOT,
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
