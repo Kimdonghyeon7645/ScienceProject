@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 section
 {
     display: flex;
@@ -125,3 +126,132 @@ section .middle_content
 }
 
 
+=======
+section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 1100px;
+
+}
+
+section .title
+{
+    padding: 70px;
+    padding-bottom: 30px;
+    border-bottom: 5px #cccccc double;
+    
+}
+.front 
+{
+    position: relative;
+    left: 5%;
+}
+.back
+{
+    position: relative;
+    right: 3%
+}
+.summary
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #cccccc;
+    padding-top: 100px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    box-sizing : border-box;
+    border-bottom: 1px solid #cccccc;
+    
+    position: relative;
+    right: 10%;
+
+    width: 450px;
+
+}
+
+.summary .l{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.content_w
+{
+    position: relative;
+    right: 7%;
+    padding: 10px;
+    font-size: 25px;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    border-bottom: 1px #464646 solid;
+
+}
+
+section img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+
+table ,td{
+    border-collapse: collapse ;
+    padding: 30px 50px 30px 50px;
+
+
+    position: relative;
+    left: 2%;
+    top: 60px;
+    text-align: center;
+
+}
+
+td:nth-child(1)
+{
+
+    border-right: 3px #cccccc solid ;
+}
+
+td:nth-child(2)
+{
+
+    border-right: 3px #cccccc solid ;
+}
+
+
+.lastTd{
+    border-top: 3px #cccccc solid;
+}
+
+
+
+
+
+.back .title{
+        position: relative;
+        left: 25%;
+}
+
+
+
+
+ section .back{
+    color: #cccccc
+}
+
+section .middle_content
+{
+    font-size: 70px;
+}
+
+
+>>>>>>> origin
