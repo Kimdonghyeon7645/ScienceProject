@@ -49,7 +49,11 @@ https://www.notion.so/Science_Project-9c3b5deffd7446eda3b27296d446757e
 <img src="/readme_img/2.png" width="450px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
 <img src="/readme_img/3.png" width="450px" height="auto" title="시간별컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
 <img src="/readme_img/4.png" width="450px" height="auto" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
-  
+ 
+<br> 
+
+# 개발 노트
+
 <details>
   <summary>ver 2 개발 노트</summary>
   
@@ -96,3 +100,17 @@ https://www.notion.so/Science_Project-9c3b5deffd7446eda3b27296d446757e
   덕분에 깃허브의 공포의 쓴맛을 오랜만에 만났고, 더욱이 지식이 늘었습니다.   
   그리고 다음부터 모르는 건, 특히 아이디와 비번을 입력해야 되는 것은 함부로 안할 것 같습니다. ^^;;
 </details>
+
+## 참고(Reference)
+
+- 파이썬을 통한 웹페이지 크롤링 살펴보기 :  https://www.youtube.com/watch?v=7_IEdMv9eFE  
+
+사실상 이분(이진석코치) 영상으로, 장고해볼까 고민하게 됬고, 입문하게 되었습니다. 사실상 이 영상이 크롤링만 하던 제가 장고와 웹개발까지 입문하게 된 계기가 되었습니다.
+
+- 꿈 많은 사람의 이야기(티스토리 블로그) : https://lsjsj92.tistory.com/category/python-django
+
+장고로 DB 연동부터 웹 페이지 연결까지, 솔직히 2003 에러도 죽어라 만났었는데, 결국 장고로 웹을 구현할 때 까지 이 블로그의 장고 설명글을 중심으로 공부했습니다. 
+
+- 스텍 오버플로우 : https://stackoverflow.com/questions/5922563/unicodedecodeerror-at-utf8-codec-cant-decode-bytes/5922583#5922583
+
+사실상 개발할 때 거의 절반 이상은 스텍 오버플로우에서 오류를 수정하는데만 힘썼습니다. 몇십개의 페이지를 들락날락 하고, 인내심의 한계에도 견디는 게 결국 프로젝트에서 가장 필요한 능력이였던 것 같습니다.
