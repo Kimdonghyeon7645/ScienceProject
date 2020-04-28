@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\askdjango",
+    "\\scienceproject",
+    "\\scienceproject\\migrations",
+    "\\scienceproject\\static",
+    "\\scienceproject\\templates",
+    "\\scienceproject\\templates\\scienceproject",
+    "\\scienceproject\\__pycache__",
+    "\\static",
+    "\\static\\admin"
+  ],
+  "SelectedNode": "\\scienceproject\\views.py",
+  "PreviewInSolutionExplorer": false
+}
