@@ -52,7 +52,7 @@ https://www.notion.so/Science_Project-9c3b5deffd7446eda3b27296d446757e
  
 <br> 
 
-# 개발 노트
+## 개발 노트
 
 <details>
   <summary>ver 2 개발 노트</summary>
@@ -100,6 +100,8 @@ https://www.notion.so/Science_Project-9c3b5deffd7446eda3b27296d446757e
   덕분에 깃허브의 공포의 쓴맛을 오랜만에 만났고, 더욱이 지식이 늘었습니다.   
   그리고 다음부터 모르는 건, 특히 아이디와 비번을 입력해야 되는 것은 함부로 안할 것 같습니다. ^^;;
 </details>
+
+<br>
 
 ## 참고(Reference)
 
