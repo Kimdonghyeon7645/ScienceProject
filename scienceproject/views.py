@@ -12,6 +12,8 @@ from .forms import GuForm
 from django.views import View
 from django.views import generic
 
+from django.http import HttpResponse
+
 
 class gu0(generic.TemplateView):
     def get(self, request, *args, **kwargs):
@@ -52,3 +54,12 @@ class gu4(generic.TemplateView):
         weather_gu = Gu4.objects.all()
 
         return render(request, template_name, {"header": weather_header, "gu0": weather_gu})
+
+        
+def idong(request):
+    if request.method == 'POST':
+        pass
+    elif request.method == 'GET':
+        return HttpResponse(request)
+    else:
+        return HttpResponse('예외')

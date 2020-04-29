@@ -48,9 +48,11 @@
         대전광역시 유성구
     </span>
     <span class="select_Area">
-        <form action="" method='GET'>
-            <select class="Sarea" id="selectBox" name="selectBox">
-                {{form}}
+        <form action="{% url 'scienceproject:idong' %}" method="GET">
+            <select class="Barea">
+                <option>대전광역시</option>
+            </select>
+            <select class="Sarea" id="gu" name="gu" onchange="this.form.submit()">
                 <option value="0" selected>유성구</option>
                 <option value="1">서구</option>
                 <option value="2">중구</option>

@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('scienceproject.urls')),
     path('index/', include('scienceproject.urls')),
     path('home/', include('scienceproject.urls')),
+    path('idong/', include('scienceproject.urls'))
 
 #    path('board/', include('scienceproject.urls')),
 ]
