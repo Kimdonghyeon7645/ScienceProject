@@ -45,7 +45,25 @@
         {% endfor %}
     </span>
     <span class="title">
-        대전광역시 유성구
+        {% for data in gu0 %}
+            {% if data.num == 1 %}
+                {% if data.gu == 0 %}
+                    대전광역시 유성구
+                {% endif %}
+                {% if data.gu == 1 %}
+                    대전광역시 서구
+                {% endif %}
+                {% if data.gu == 2 %}
+                    대전광역시 중구
+                {% endif %}
+                {% if data.gu == 3 %}
+                    대전광역시 대덕구
+                {% endif %}
+                {% if data.gu == 4 %}
+                    대전광역시 동구
+                {% endif %}
+            {% endif %}
+        {% endfor %}    
     </span>
     <span class="select_Area">
         <form action="{% url 'scienceproject:idong' %}" method="GET">
@@ -53,7 +71,8 @@
                 <option>대전광역시</option>
             </select>
             <select class="Sarea" id="gu" name="gu" onchange="this.form.submit()">
-                <option value="0" selected>유성구</option>
+                <option selected disabled>(구 선택)</option>
+                <option value="0">유성구</option>
                 <option value="1">서구</option>
                 <option value="2">중구</option>
                 <option value="3">대덕구</option>
@@ -518,5 +537,26 @@
     </span>
     </div>
 </nav>
+<footer>
+    <span class="footer_if"> <!--if = information-->
+        <span class="pwtsl">  <!-- pwtsl  = plus_weather_to_school_life-->
+            <img src="static/img/awesome_cloud.svg">
+            <span class="plus">학교생활에 날씨를 더하다</span>
+        </span>
+
+    <span class="infomation_user">
+        <span>날씨데이터 : 기상청, 에어코리아</span>
+        <span style="padding-left: 2%;">팀원 : (PL)김동현, (PM)배현호, 신두평, 최종근, 이수필</span>
+        <div class="email">주소 : (34111) 대전광역시 유성구 가정북로 76(장동 23-9) <span style="padding-left: 15px; padding-right: 15px;">|</span> email : kkddhh2826@gmail.com</div>
+        <div>Copyrightⓒ 학교생활에 날씨를 더하다. All rights reserved.</div>
+    </span>
+    <span class="github">
+        <span><a href="https://github.com/Kimdonghyeon7645/ScienceProject" taget=_blank title="저의 프로젝트의 깃허브링크로, 누구나 코드를 확인하실수 있습니다.">
+            <img src="static/img/github.svg">
+            </a></span>
+        <div class="g">github</div>
+    </span>
+</span>
+</footer>
 </body>
 </html>

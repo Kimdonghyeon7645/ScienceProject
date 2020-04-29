@@ -6,8 +6,6 @@ from .models import Gu2
 from .models import Gu3
 from .models import Gu4
 
-from .forms import GuForm
-
 
 from django.views import View
 from django.views import generic
