@@ -2,6 +2,7 @@ from django.db import models
 
 class Gu0(models.Model):
     num = models.IntegerField(primary_key=True)
+    gu = models.SmallIntegerField(blank=True, null=True)
     time_difference = models.IntegerField(blank=True, null=True)
     hour = models.IntegerField(blank=True, null=True)
     temp = models.SmallIntegerField(blank=True, null=True)
@@ -29,6 +30,7 @@ class Gu0(models.Model):
 
 class Gu1(models.Model):
     num = models.IntegerField(primary_key=True)
+    gu = models.SmallIntegerField(blank=True, null=True)
     time_difference = models.IntegerField(blank=True, null=True)
     hour = models.IntegerField(blank=True, null=True)
     temp = models.SmallIntegerField(blank=True, null=True)
@@ -56,6 +58,7 @@ class Gu1(models.Model):
 
 class Gu2(models.Model):
     num = models.IntegerField(primary_key=True)
+    gu = models.SmallIntegerField(blank=True, null=True)
     time_difference = models.IntegerField(blank=True, null=True)
     hour = models.IntegerField(blank=True, null=True)
     temp = models.SmallIntegerField(blank=True, null=True)
@@ -83,6 +86,7 @@ class Gu2(models.Model):
 
 class Gu3(models.Model):
     num = models.IntegerField(primary_key=True)
+    gu = models.SmallIntegerField(blank=True, null=True)
     time_difference = models.IntegerField(blank=True, null=True)
     hour = models.IntegerField(blank=True, null=True)
     temp = models.SmallIntegerField(blank=True, null=True)
@@ -110,6 +114,7 @@ class Gu3(models.Model):
 
 class Gu4(models.Model):
     num = models.IntegerField(primary_key=True)
+    gu = models.SmallIntegerField(blank=True, null=True)
     time_difference = models.IntegerField(blank=True, null=True)
     hour = models.IntegerField(blank=True, null=True)
     temp = models.SmallIntegerField(blank=True, null=True)

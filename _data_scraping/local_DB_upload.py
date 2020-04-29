@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-과학 프로젝트는 과학이다.
-조별 프로젝트도 과학이다.
-(걍 이럴꺼면 개인 프로젝트라고 했지 하....)
+4.29. 코드를 리펙토링 하면서
+로컬 DB 업로드할 때의 DB 버전을 다시 정리해서 최신으로 업데이트 했다.
+(gu 필드 추가)
 """
 from bs4 import BeautifulSoup
 import requests
@@ -42,7 +42,7 @@ urls = [
     'http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=3011062000'   # 동구 (가양동)
 ]
 
-for url in urls:  # 유성구, 서구, 중구, 대덕구, 동구순
+for gu, url in enumerate(urls):  # 유성구, 서구, 중구, 대덕구, 동구순
     num = 1
     gu_data = []
     html = requests.get(url)
@@ -77,13 +77,12 @@ for url in urls:  # 유성구, 서구, 중구, 대덕구, 동구순
         wind_korean = content.find('wden').text  # 현재 풍향 한글로
         humi = content.find('reh').text  # 현재 습도 (백분위, %)
         hour_data = [
-            str(num), time_difference, hour, temp, day_high_temp, day_low_temp, sky_state, weather_state, weather_kor,
+            str(num), gu, time_difference, hour, temp, day_high_temp, day_low_temp, sky_state, weather_state, weather_kor,
             rain_persent, expect_rain_6h, expect_rain_12h, expect_snow_6h, expect_snow_12h, wind_speed, wind_way,
             wind_korean, humi, pms[int(day_num)][0], pms[int(day_num)][1]
         ]
         num += 1
         gu_data.append(hour_data)
-
     all_data.append(gu_data)
 
 # -*- 크롤링 끝, pythonanywhere 원격 DB 업로드 시작 -*-
@@ -110,17 +109,17 @@ if state is '3':
     # 구별로 테이블 생성 + 삽입
     for index, gu_data in enumerate(all_data):
         cur.execute(
-            f"CREATE TABLE gu_{index} (num TINYINT, time_difference TINYINT, hour TINYINT, temp SMALLINT, "
+            f"CREATE TABLE gu_{index} (num TINYINT, gu TINYINT, time_difference TINYINT, hour TINYINT, temp SMALLINT, "
             f"day_high_temp SMALLINT, day_low_temp SMALLINT, sky_state TINYINT, weather_state TINYINT, "
             f"weather_kor VARCHAR(20), rain_persent TINYINT, expect_rain_6h FLOAT, expect_rain_12h FLOAT, "
             f"expect_snow_6h FLOAT, expect_snow_12h FLOAT, wind_speed FLOAT, wind_way TINYINT, wind_text CHAR(4), "
             f"humi TINYINT, fine_dust VARCHAR(10), small_fine_dust VARCHAR(10), PRIMARY KEY(num) );"
         )
         cur.executemany(
-            f"INSERT INTO gu_{index} (num, time_difference, hour, temp, day_high_temp, day_low_temp, "
+            f"INSERT INTO gu_{index} (num, gu, time_difference, hour, temp, day_high_temp, day_low_temp, "
             f"sky_state, weather_state, weather_kor, rain_persent, expect_rain_6h, expect_rain_12h, "
             f"expect_snow_6h, expect_snow_12h, wind_speed, wind_way, wind_text, humi, fine_dust, small_fine_dust) "
-            f"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", gu_data
+            f"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", gu_data
         )
         conn.commit()
 
@@ -137,7 +136,7 @@ elif state is '4':
     for index, gu_data in enumerate(all_data):
         for hour_data in gu_data:
             cur.execute(
-                f"UPDATE gu_{index} SET time_difference = %s, hour = %s, temp = %s, day_high_temp = %s, day_low_temp = "
+                f"UPDATE gu_{index} SET gu = %s, time_difference = %s, hour = %s, temp = %s, day_high_temp = %s, day_low_temp = "
                 f"%s, sky_state = %s, weather_state = %s, weather_kor = %s, rain_persent = %s, expect_rain_6h = %s, "
                 f"expect_rain_12h = %s, expect_snow_6h = %s, expect_snow_12h = %s, wind_speed = %s, wind_way = %s, "
                 f"wind_text = %s, humi = %s, fine_dust = %s, small_fine_dust = %s WHERE num = %s",
@@ -145,7 +144,7 @@ elif state is '4':
                     hour_data[1], hour_data[2], hour_data[3], hour_data[4], hour_data[5],
                     hour_data[6], hour_data[7], hour_data[8], hour_data[9], hour_data[10], hour_data[11],
                     hour_data[12], hour_data[13], hour_data[14], hour_data[15],
-                    hour_data[16], hour_data[17], hour_data[18], hour_data[19], int(hour_data[0])
+                    hour_data[16], hour_data[17], hour_data[18], hour_data[19], hour_data[20], int(hour_data[0])
                 )
             )
             conn.commit()

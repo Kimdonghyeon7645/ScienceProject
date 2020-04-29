@@ -45,7 +45,25 @@
         {% endfor %}
     </span>
     <span class="title">
-        대전광역시 유성구
+        {% for data in gu0 %}
+            {% if data.num == 1 %}
+                {% if data.gu == 0 %}
+                    대전광역시 유성구
+                {% endif %}
+                {% if data.gu == 1 %}
+                    대전광역시 서구
+                {% endif %}
+                {% if data.gu == 2 %}
+                    대전광역시 중구
+                {% endif %}
+                {% if data.gu == 3 %}
+                    대전광역시 대덕구
+                {% endif %}
+                {% if data.gu == 4 %}
+                    대전광역시 동구
+                {% endif %}
+            {% endif %}
+        {% endfor %}    
     </span>
     <span class="select_Area">
         <form action="{% url 'scienceproject:idong' %}" method="GET">
@@ -53,7 +71,8 @@
                 <option>대전광역시</option>
             </select>
             <select class="Sarea" id="gu" name="gu" onchange="this.form.submit()">
-                <option value="0" selected>유성구</option>
+                <option selected disabled>(구 선택)</option>
+                <option value="0">유성구</option>
                 <option value="1">서구</option>
                 <option value="2">중구</option>
                 <option value="3">대덕구</option>
