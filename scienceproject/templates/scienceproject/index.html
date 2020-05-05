@@ -19,11 +19,17 @@
             background-image: url(static/img/rain.svg);
         }
     </style>
-    <link rel="stylesheet" href="{% static '/css/header.css' %}" >
-    <link rel="stylesheet" href="{% static '/css/content.css' %}" >
-    <link rel="stylesheet" href="{% static '/css/nav.css' %}" >
-    <link rel="stylesheet" href="{% static '/css/section.css' %}" >
-    <link rel="stylesheet" href="{% static '/css/footer.css' %}" >
+    <link rel="stylesheet" href="{% static '/css/header.css' %}" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="{% static '/css/content.css' %}" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="{% static '/css/nav.css' %}" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="{% static '/css/section.css' %}" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}" media="(min-width: 1130px)">
+
+    <link rel="stylesheet" href="{% static '/css/header.css' %}" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="{% static '/css/content.css' %}" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="{% static '/css/nav.css' %}" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="{% static '/css/section.css' %}" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}" media="(max-width: 1130px)">
 </head>
 
 
