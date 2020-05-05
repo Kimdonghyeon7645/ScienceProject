@@ -1,58 +1,54 @@
-
 header{
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
 
     background-color: black;
     justify-content: space-between;
-    opacity: 0.77;
+    opacity: 0.9;
     width: 100%;
     height: 15%;
 
     
 }
-.when{
-    
+
+.when{    
     display: flex;
     flex-direction: column;
-    color: white;
-    margin-left: 5%;
-    
+    color: lightgray;
+    margin: 1%;
 }
-.middle_date
-{
-    margin-bottom: 2%;
+
+.middle_date{
+    margin-bottom: 1%;
 
     text-align: center;
-    font-size: 26px;
-    letter-spacing: 2px;
-    word-spacing:  5px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
 }
 
 .title{
     color: white;
-
-    font-size: 50px;
+    font-size: 2.5rem;
 }
 
-.select_Area
-{
+.select_Area{
+    display: block;
+    position: relative;
+    right: 2%;
+    margin-left: 5%;
+}
+
+.Barea{
+    display: none;
     position: relative;
     right: 2%;
 }
-.Barea
-{
-    position: relative;
-    right: 5%;
-}
 
-.Sarea
-{
-    width: 150px;
-
+.Sarea{
+    display: block;
+    width: 7rem;
 }
 
 select {
