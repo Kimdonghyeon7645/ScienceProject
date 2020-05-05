@@ -4,15 +4,14 @@ content{
     justify-content: flex-start;
     
     color: #CCCCCC;
-    height: 1080px;
     padding-top: 8%;
     align-content: flex-start;
-    align-items: center;
-
- 
+    align-items: center; 
 }
 
-
+.mood{
+    font-size: 3em;
+}
 
 .temp_Property{
     display:flex;
@@ -20,25 +19,20 @@ content{
     align-items: center;
     justify-content: flex-start;
     letter-spacing: 3px;
-
-
 }
 
 .ULtemp
 {
-    font-size: 30px;
+    font-size: 2em;
 }
 .Utemp::before{
     content: "/ ";
 }
-.mood{
-    font-size: 50px;
-}
+
 .temp
 {
-    
-    font-weight: 200;
-    font-size: 200px    ;
+    font-weight: 300;
+    font-size: 18em;
 }
 
 
@@ -54,8 +48,7 @@ content{
     margin-top: 10px;
 }
 .boolean_of_ms{
-    margin-top: 35px;
-    font-size: 50px;
+    font-size: 3em;
     text-align: center;
-    font-weight: 200;
+    margin: 4%;
 }

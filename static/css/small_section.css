@@ -14,18 +14,16 @@ section .title
     border-bottom: 5px #cccccc double;
     
 }
-.front 
-{
+.front{
     position: relative;
     left: 5%;
 }
-.back
-{
+.back{
     position: relative;
     right: 3%
 }
-.summary
-{
+
+.summary{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -40,7 +38,6 @@ section .title
     right: 10%;
 
     width: 450px;
-
 }
 
 .summary .l{
@@ -48,11 +45,9 @@ section .title
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
-.content_w
-{
+.content_w{
     position: relative;
     right: 7%;
     padding: 10px;
@@ -63,38 +58,28 @@ section .title
     justify-content: space-around;
     width: 400px;
     border-bottom: 1px #464646 solid;
-
 }
 
 section img{
     width: 40px;
     height: 40px;
-    
 }
-
-
 
 table ,td{
     border-collapse: collapse ;
     padding: 30px 50px 30px 50px;
 
-
     position: relative;
     left: 2%;
     top: 60px;
     text-align: center;
-
 }
 
-td:nth-child(1)
-{
-
+td:nth-child(1){
     border-right: 3px #cccccc solid ;
 }
 
-td:nth-child(2)
-{
-
+td:nth-child(2){
     border-right: 3px #cccccc solid ;
 }
 
@@ -103,19 +88,13 @@ td:nth-child(2)
     border-top: 3px #cccccc solid;
 }
 
-
-
-
-
 .back .title{
         position: relative;
         left: 25%;
 }
 
 
-
-
- section .back{
+section .back{
     color: #cccccc
 }
 

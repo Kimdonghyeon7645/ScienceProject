@@ -1,6 +1,3 @@
-
-
-
 nav{
     width: 95%;
     height: 900px;
@@ -8,10 +5,8 @@ nav{
     left: 3%;
 }
 
-
 nav .title{
     text-align: center;
-
 }
 
 .ele{
@@ -26,35 +21,30 @@ nav .title{
     padding-right: 2%;
     padding-left:  2%;
 }   
-.ele:nth-child(odd)
-{
+
+.ele:nth-child(odd){
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
-
 }
-.ele:nth-child(10)
-{
+
+.ele:nth-child(10){
     border-right: 1px solid #cccccc;
 
 }
-.ele_title
-{
+.ele_title{
     font-size: 30px;
     margin-bottom: 35px;
 }
 
-.ele .mood_img
-{
+.ele .mood_img{
     margin-bottom: 35px;
 }
-.ele_temp
-{
 
+.ele_temp{
     font-size: 30px;
 }
 
-.n
-{
+.n{
     margin: 5px;
 }
 
@@ -63,4 +53,3 @@ nav .title{
     flex-direction: row;
     justify-content: space-around;
 }
-
