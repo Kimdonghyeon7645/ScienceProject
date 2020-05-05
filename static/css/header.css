@@ -62,7 +62,7 @@ select {
 width: 200px; /* 원하는 너비설정 */
 padding: 0.6em 1.5em; /* 여백으로 높이 설정 */
 font-family: inherit;  /* 폰트 상속 */
-background: url(static/img/t.svg) no-repeat 95% 50%; /* 네이티브 화살표 대체 */  
+background: no-repeat 95% 50%; /* 네이티브 화살표 대체 */  
 border: 1px solid #cccccc; 
 border-radius: 0px; /* iOS 둥근모서리 제거 */
 -webkit-appearance: none; /* 네이티브 외형 감추기 */
