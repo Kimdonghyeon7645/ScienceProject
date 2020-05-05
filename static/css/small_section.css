@@ -1,56 +1,53 @@
-section
-{
-    display: flex;
-    flex-direction: row;
+section{
+    flex-direction: column;
     justify-content: space-around;
-    height: 1100px;
-
+    margin-top: 3em;
 }
 
-section .title
-{
-    padding: 70px;
-    padding-bottom: 30px;
-    border-bottom: 5px #cccccc double;
-    
+section .title{
+    position: relative;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+    border-bottom: 0.1em #cccccc double;
 }
+
 .front{
     position: relative;
-    left: 5%;
+    left: 25%;
+    transform: translate(-50%, -50%);
 }
 .back{
     position: relative;
-    right: 3%
+    left: 25%;
+    transform: translate(-50%, -50%);
 }
 
 .summary{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
-    color: #cccccc;
-    padding-top: 100px;
-    font-size: 30px;
-    padding-bottom: 20px;
-    box-sizing : border-box;
+    color: white;
+    padding-top: 2em;
+    font-size: 1.6em;
+    padding-bottom: 3%;
     border-bottom: 1px solid #cccccc;
     
     position: relative;
-    right: 10%;
-
-    width: 450px;
 }
 
-.summary .l{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.content{
+    margin: 2em;
+}
+
+.hr{
+    display: none;
 }
 
 .content_w{
+    
     position: relative;
-    right: 7%;
-    padding: 10px;
+    padding: 1em;
     font-size: 25px;
     color: #cccccc;
     display: flex;
@@ -93,10 +90,6 @@ td:nth-child(2){
         left: 25%;
 }
 
-
-section .back{
-    color: #cccccc
-}
 
 section .middle_content
 {
