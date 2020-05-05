@@ -1,0 +1,76 @@
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+
+    background-color: black;
+    justify-content: space-between;
+    opacity: 0.77;
+    width: 100%;
+    height: 15%;
+
+    
+}
+.when{
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 5%;
+    
+}
+.middle_date
+{
+    margin-bottom: 2%;
+
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 2px;
+    word-spacing:  5px;
+}
+
+.title{
+    color: white;
+
+    font-size: 50px;
+}
+
+.select_Area
+{
+    position: relative;
+    right: 2%;
+}
+.Barea
+{
+    position: relative;
+    right: 5%;
+}
+
+.Sarea
+{
+    width: 150px;
+
+}
+
+select {
+    font-size: 15px;
+    color: #cccccc;
+
+width: 200px; /* 원하는 너비설정 */
+padding: 0.6em 1.5em; /* 여백으로 높이 설정 */
+font-family: inherit;  /* 폰트 상속 */
+background: no-repeat 95% 50%; /* 네이티브 화살표 대체 */  
+border: 1px solid #cccccc; 
+border-radius: 0px; /* iOS 둥근모서리 제거 */
+-webkit-appearance: none; /* 네이티브 외형 감추기 */
+-moz-appearance: none;
+appearance: none;
+}
+
+option{
+    color: #cccccc;
+    background-color: #1b1b1b
+}

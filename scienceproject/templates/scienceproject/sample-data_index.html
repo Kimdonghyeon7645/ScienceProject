@@ -4,19 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>학교생활에 날씨를 더하다</title>
 
-    <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="stylesheet" href="/static/css/header.css">
-    <link rel="stylesheet" href="/static/css/content.css">
-    <link rel="stylesheet" href="/static/css/section.css">
-    <link rel="stylesheet" href="/static/css/nav.css">
-    <link rel="stylesheet" href="/static/css/footer.css">
-</head>
+    <link rel="stylesheet" href="/static/css/index.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/header.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/content.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/section.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/nav.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/footer.css" media="(min-width: 1130px)">
 
+    <link rel="stylesheet" href="/static/css/small_index.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_header.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_content .css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_section.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_nav.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_footer.css" media="(max-width: 1130px)">
+</head>
 
 <body>
 <header style="z-index: 2;">
     <span class="when">
-        
             <span class="middle_date">
                 2020.
                 5.
@@ -28,50 +33,9 @@
                 5.
                 2:00
             </span>
-        
     </span>
     <span class="title">
-        
-            
-                
                     대전광역시 유성구
-                
-                
-                
-                
-                
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="select_Area">
         <form action="/idong" method="GET">
@@ -91,316 +55,36 @@
 </header>
 <content style="z-index: 1;">
     <span class="mood">
-        
-            
                 구름 많음
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
 <span class="temp_Property">
     <span class="temp">
-        
-            
                 14<span style="font-size: 50px; position: relative; bottom: 55%">º</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
         </span>
     <span class="ULtemp">
         <span class="Ltemp">
-            
-            
-                
                     <span style="font-size: 45px;">22</span>º
-                
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         </span>
         <span class="Utemp">
-            
-            
-                
                     <span style="font-size: 45px;">14</span>º
-                
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         </span>
     </span>
 </span>
     <span class="middle_Property">
         <span id="rain">
-            
-            
                 20<span style="font-size: 15px;">%</span><div style="font-size: 20px;">강수확률</div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         </span>
         <span id="morning_excercise">
-            
-            
-                
                     84<span style="font-size: 15px;">%</span><div style="font-size: 20px;">아침운동</div>
-                
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         </span>
         <span id="humidity">
-            
-            
                 보통<span style="font-size: 15px;">단계</span><div style="font-size: 20px;">미세먼지</div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         </span>
     </span>
     <div class="boolean_of_ms">
-        
-            
             <span style="font-size: 30px;">
-                
                     눈앞이 깜깜합니다... 내일 운동장을 뛰고 있을 미래가 살짝 보여요...
-                
             </span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </div>
 </content>
 <section>
@@ -411,168 +95,22 @@
                 </span>
                 <div>
                     <div class="content_w">
-                        
-                            
-                                
                                     <span>이번등교</span><span><img src="/static/img/cloudyIcon.svg"></span>보통
-                                
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
                     </div>
                     <div class="content_w">
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                                
                                     <span>이번하교</span><span><img src="/static/img/rainy.svg"></span>보통
-                                
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
                     </div>
                     <div class="content_w">
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                                
                                     <span>다음등교</span><span><img src="/static/img/sunny.svg"></span>보통
-                                
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
                     </div>
                     <div class="content_w">
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                                
                                     <span>다음하교</span><span><img src="/static/img/rainy.svg"></span>보통
-                                
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
                     </div>
                 </div>
         </span>
     <hr style="height: 50%; position: relative; left: 3%">
         <span class="back">
             <span class="title">세부 날씨</span>
-            
-                
                     <table>
                         <tbody><tr>
                             <td>예측시간<div class="middle_content">6<span style="font-size:15px">시</span></div></td>
@@ -585,38 +123,6 @@
                             <td class="lastTd">초미세먼지<div class="middle_content"><span style="font-size:50px">보통<span style="font-size:15px">단계</span></span></div></td>
                         </tr>
                     </tbody></table>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
         </span>
 </section>
 <nav>
@@ -624,8 +130,6 @@
     <div><img style="width:100%; padding-top: 30px; padding-bottom: 20px" src="/static/img/shape.svg"></div>
 <div class="props">
     <span class="ele">
-        
-            
                 <span class="ele_title">6시</span>
                 <span class="mood_img">
                     
@@ -635,44 +139,8 @@
                 <span class="ele_temp">14<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 20%</span>
                 <span class="n">습도 80%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
                 <span class="ele_title">9시</span>
                 <span class="mood_img">
                     
@@ -682,44 +150,8 @@
                 <span class="ele_temp">19<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 20%</span>
                 <span class="n">습도 60%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
-        
-            
                 <span class="ele_title">12시</span>
                 <span class="mood_img">
                     
@@ -729,44 +161,8 @@
                 <span class="ele_temp">21<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 20%</span>
                 <span class="n">습도 55%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
-        
-            
-        
-            
                 <span class="ele_title">15시</span>
                 <span class="mood_img">
                     
@@ -776,44 +172,8 @@
                 <span class="ele_temp">19<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 20%</span>
                 <span class="n">습도 75%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
                 <span class="ele_title">18시</span>
                 <span class="mood_img">
                     
@@ -823,44 +183,8 @@
                 <span class="ele_temp">18<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 60%</span>
                 <span class="n">습도 70%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
                 <span class="ele_title">21시</span>
                 <span class="mood_img">
                     
@@ -870,44 +194,8 @@
                 <span class="ele_temp">16<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 20%</span>
                 <span class="n">습도 80%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
                 <span class="ele_title">24시</span>
                 <span class="mood_img">
                     
@@ -917,44 +205,8 @@
                 <span class="ele_temp">15<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 0%</span>
                 <span class="n">습도 85%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
                 <span class="ele_title">3시</span>
                 <span class="mood_img">
                     
@@ -964,44 +216,8 @@
                 <span class="ele_temp">13<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 0%</span>
                 <span class="n">습도 90%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
                 <span class="ele_title">6시</span>
                 <span class="mood_img">
                     
@@ -1011,44 +227,8 @@
                 <span class="ele_temp">13<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 0%</span>
                 <span class="n">습도 90%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     <span class="ele">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
                 <span class="ele_title">9시</span>
                 <span class="mood_img">
                     
@@ -1058,20 +238,6 @@
                 <span class="ele_temp">17<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
                 <span class="n">강수 0%</span>
                 <span class="n">습도 75%</span>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
     </span>
     </div>
 </nav>
@@ -1096,6 +262,3 @@
     </span>
 </span>
 </footer>
-
-
-<div id="sa-extension-is-installed"></div></body><whale-quicksearch translate="no"></whale-quicksearch></html>
