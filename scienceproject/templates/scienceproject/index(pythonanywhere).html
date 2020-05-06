@@ -298,237 +298,30 @@
 <nav>
     <div class="title">시간대 별</div>
     <div><img style="width:100%; padding-top: 30px; padding-bottom: 20px" src="static/img/shape.svg"></div>
-<div class="props">
-    <span class="ele">
+    <div class="props">
         {% for data in gu0 %}
-            {% if data.num == 1 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
+            {% if data.num < 11 %}
+                <span class="ele">
+                    <span class="ele_title">{{data.hour}}시</span>
+                    <span class="mood_img">
+                        {% if data.weather_kor == "맑음" %}
+                            <img src="static/img/sunny.svg">
+                        {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
+                            <img src="static/img/cloudyIcon.svg">
+                        {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
+                            <img src="static/img/rainy.svg">
+                        {% elif data.weather_kor == "눈" %}
+                            <img src="static/img/snowy.svg">
+                        {% else %}
+                            <img src="static/img/electric.svg">
+                        {% endif %}
+                    </span>
+                    <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
+                    <span class="n">강수 {{ data.rain_persent}}%</span>
+                    <span class="n">습도 {{ data.humi }}%</span>
                 </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
             {% endif %}
         {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 2 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 3 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 4 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 5 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 6 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 7 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 8 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 9 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
-    <span class="ele">
-        {% for data in gu0 %}
-            {% if data.num == 10 %}
-                <span class="ele_title">{{data.hour}}시</span>
-                <span class="mood_img">
-                    {% if data.weather_kor == "맑음" %}
-                        <img src="static/img/sunny.svg">
-                    {% elif data.weather_kor == "구름" or data.weather_kor == "구름 많음" or data.weather_kor == "흐림" %}
-                        <img src="static/img/cloudyIcon.svg">
-                    {% elif data.weather_kor == "비" or data.weather_kor == "비/눈" %}
-                        <img src="static/img/rainy.svg">
-                    {% elif data.weather_kor == "눈" %}
-                        <img src="static/img/snowy.svg">
-                    {% else %}
-                        <img src="static/img/electric.svg">
-                    {% endif %}
-                </span>
-                <span class="ele_temp">{{ data.temp }}<span style="font-size:20px ;position: relative; bottom: 10px ">º</span></span>
-                <span class="n">강수 {{ data.rain_persent}}%</span>
-                <span class="n">습도 {{ data.humi }}%</span>
-            {% endif %}
-        {% endfor %}
-    </span>
     </div>
 </nav>
 <footer>
