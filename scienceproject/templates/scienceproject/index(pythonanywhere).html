@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>학교생활에 날씨를 더하다</title>
 
-    <link rel="stylesheet" href="/static/css/index.css" >
-    <link rel="stylesheet" href="/static/css/header.css" >
-    <link rel="stylesheet" href="/static/css/content.css" >
-    <link rel="stylesheet" href="/static/css/section.css" >
-    <link rel="stylesheet" href="/static/css/nav.css" >
-    <link rel="stylesheet" href="/static/css/footer.css" >
+    <link rel="stylesheet" href="/static/css/index.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/header.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/content.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/section.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/nav.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/footer.css" media="(min-width: 1130px)">
+
+    <link rel="stylesheet" href="/static/css/small_index.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_header.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_content .css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_section.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_nav.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_footer.css" media="(max-width: 1130px)">
 </head>
 
 
@@ -159,7 +166,7 @@
     <div class="boolean_of_ms">
         {% for data in gu0 %}
             {% if data.hour == 6 and data.time_difference < 24 %}
-            <span style="font-size: 30px;">
+            <span style="font-size: 30px;"><p>
                 {% if data.rain_persent >= 70 %}
                     비가 올 날씨네요 :D 실내운동 확정!
                 {% elif data.temp < -3 %}
@@ -185,7 +192,7 @@
                 {% else %}
                     알수없음
                 {% endif %}
-            </span>
+            </p></span>
             {% endif %}
         {% endfor %}
     </div>
@@ -196,7 +203,7 @@
                 <span class="summary">
                     <span>등하교시간</span><span>날씨</span><span>미세먼지</span>
                 </span>
-                <div>
+                <div class="content">
                     <div class="content_w">
                         {% for data in gu0 %}
                             {% if data.hour == 6 and data.time_difference < 24 %}
