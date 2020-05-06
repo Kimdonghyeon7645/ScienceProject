@@ -5,39 +5,45 @@ section{
 }
 
 section .title{
-    position: relative;
-    left: 10%;
+    position: absolute;
+    left: 40%;
     transform: translate(-50%, -50%);
-    padding: 3%;
     border-bottom: 0.1em #cccccc double;
 }
 
+.back .title{
+    color: white;
+    position: absolute;
+    left: 47%;
+    bottom: 100%;
+    transform: translate(-50%, -50%);    
+}
+
 .front{
-    position: relative;
-    left: 25%;
+    position: absolute;
+    top: 155%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 .back{
-    position: relative;
-    left: 25%;
+    position: absolute;
+    top: 240%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .summary{
     display: none;
-    flex-direction: row;
-    justify-content: space-around;
     color: white;
     padding-top: 2em;
     font-size: 1.6em;
     padding-bottom: 3%;
     border-bottom: 1px solid #cccccc;
     
-    position: relative;
 }
 
 .content{
-    margin: 2em;
+    margin-top: 5em;
 }
 
 .hr{
@@ -63,12 +69,11 @@ section img{
 }
 
 table ,td{
+    color: white;
     border-collapse: collapse ;
     padding: 30px 50px 30px 50px;
 
     position: relative;
-    left: 2%;
-    top: 60px;
     text-align: center;
 }
 
@@ -83,11 +88,6 @@ td:nth-child(2){
 
 .lastTd{
     border-top: 3px #cccccc solid;
-}
-
-.back .title{
-        position: relative;
-        left: 25%;
 }
 
 

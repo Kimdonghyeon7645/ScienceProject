@@ -1,8 +1,8 @@
 nav{
     width: 95%;
-    height: 900px;
-    position: relative;
-    left: 3%;
+    position: absolute;
+    top: 270%;
+    margin-top: 30%;
 }
 
 nav .title{
