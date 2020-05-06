@@ -2,6 +2,8 @@ footer
 {
     position: absolute;
     top: 380%;
+    left: 10%;
+    transform: translate(-5%, -5%);
     background: linear-gradient(to top, black, 50%, rgba(0,0,0,0));
     
     box-sizing: border-box;
@@ -32,10 +34,7 @@ footer
 .pwtsl
 {
     padding-top: 2%;
-
-    position: relative;
-    left: 3%;
-
+    
 }
 
 .email{
@@ -44,9 +43,7 @@ footer
 
 .plus
 {
-    position: relative;
-    bottom: 20px;
-
+    display: static;
     margin-left: 10px;
 }
 

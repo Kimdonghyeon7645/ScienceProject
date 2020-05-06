@@ -2,6 +2,7 @@ nav{
     width: 95%;
     position: absolute;
     top: 270%;
+    left: 2%;
     margin-top: 30%;
 }
 
@@ -22,15 +23,34 @@ nav .title{
     padding-left:  2%;
 }   
 
-.ele:nth-child(odd){
-    border-left: 1px solid #cccccc;
+.ele{
     border-right: 1px solid #cccccc;
 }
 
-.ele:nth-child(10){
-    border-right: 1px solid #cccccc;
-
+@media (max-width: 980px){
+    .ele:nth-child(10){
+        display: none;
+    }
 }
+
+@media (max-width: 860px){
+    .ele:nth-child(9){
+        display: none;
+    }
+}
+
+@media (max-width: 710px){
+    .ele:nth-child(8){
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .ele:nth-child(7){
+        display: none;
+    }
+}
+
 .ele_title{
     font-size: 30px;
     margin-bottom: 35px;
