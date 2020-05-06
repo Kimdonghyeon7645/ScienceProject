@@ -9,6 +9,5 @@ html{
 
 }
 body{
-    background: linear-gradient(to top, black 10%, rgba(0,0,0,0))
+    background: linear-gradient(to top, black 10%, rgba(0,0,0,0));
 }
-
