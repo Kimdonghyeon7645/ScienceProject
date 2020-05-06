@@ -29,6 +29,7 @@ section .title{
     position: absolute;
     top: 240%;
     left: 50%;
+    width: 530px;
     transform: translate(-50%, -50%);
 }
 
@@ -68,10 +69,10 @@ section img{
     height: 40px;
 }
 
-table ,td{
+td{
     color: white;
-    border-collapse: collapse ;
-    padding: 30px 50px 30px 50px;
+    border-collapse: collapse;
+    padding: 1em ;
 
     position: relative;
     text-align: center;
