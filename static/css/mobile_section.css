@@ -3,6 +3,7 @@ section{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    width: 98%;    
 }
 
 section .title{
@@ -49,13 +50,14 @@ section img{
 }
 
 table{
-    margin-top: 7%;
+    margin-top: 10%;
+    width: 98%;
 }
 
 td{
     color: white;
     border-collapse: collapse;
-    padding: 1em ;
+    padding: 2%;
 
     position: relative;
     text-align: center;
@@ -77,5 +79,5 @@ td:nth-child(2){
 
 section .middle_content
 {
-    font-size: 70px;
+    font-size: 280%;
 }

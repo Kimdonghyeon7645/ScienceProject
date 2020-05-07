@@ -1,56 +1,51 @@
 header{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 
     background-color: black;
     justify-content: space-between;
     opacity: 0.9;
     width: 100%;
+    padding-bottom: 2%;
 }
 
 .when{    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: lightgray;
-    margin: 1%;
 }
 
 .middle_date{
-    margin-bottom: 1%;
-
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 100%;
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
+    margin-right: 10%;
 }
 
 .last_date{
-    text-align: center;
-    font-size: 0.9rem;
+
+    font-size: 100%;
 }
 
 .title{
+    position: relative;
+    left: 30%;
     color: white;
-    font-size: 2.5rem;
-    margin: 0.5em;
+    font-size: 170%;
+    margin-bottom: 3%;
 }
 
 .select_Area{
-    position: relative;
-    right: 2%;
-    margin-left: 5%;
+    padding: 0px;
 }
 
 .Barea{
     display: none;
-    position: relative;
-    right: 2%;
 }
 
 .Sarea{
-    display: block;
-    width: 7rem;
+    width: 30%;
+    height: auto;
 }
 
 select {

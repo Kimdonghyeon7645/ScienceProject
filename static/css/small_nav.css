@@ -23,6 +23,12 @@ nav .title{
     padding-left:  2%;
 }   
 
+.hr_bar{
+    width:100%; 
+    padding-top: 30px; 
+    padding-bottom: 20px;
+}
+
 .ele{
     border-right: 1px solid #cccccc;
 }
@@ -53,7 +59,7 @@ nav .title{
 
 
 .ele_title{
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 35px;
 }
 

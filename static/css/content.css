@@ -12,7 +12,9 @@ content{
  
 }
 
-
+.temp_num{
+    font-size: 45px;
+}
 
 .temp_Property{
     display:flex;
@@ -20,8 +22,6 @@ content{
     align-items: center;
     justify-content: flex-start;
     letter-spacing: 3px;
-
-
 }
 
 .ULtemp
@@ -55,7 +55,7 @@ content{
 }
 .boolean_of_ms{
     margin-top: 35px;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     font-weight: 200;
 }

@@ -21,6 +21,10 @@ content{
     letter-spacing: 3px;
 }
 
+.temp_num{
+    font-size: 45px;
+}
+
 .ULtemp
 {
     font-size: 2em;
@@ -48,7 +52,7 @@ content{
     margin-top: 10px;
 }
 .boolean_of_ms{
-    font-size: 3em;
+    font-size: 30px;
     text-align: center;
     margin: 4%;
 }
