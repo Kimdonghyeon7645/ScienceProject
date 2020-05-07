@@ -1,8 +1,7 @@
 footer
 {
-    position: absolute;
+    position: relative;
     top: 380%;
-    left: 10%;
     transform: translate(-5%, -5%);
     background: linear-gradient(to top, black, 50%, rgba(0,0,0,0));
     
@@ -13,8 +12,8 @@ footer
 
     border-image-width: 1% 0 0 0; 
 
-    border-top: 1px white solid;
-
+    border-top: 1px white solid;   
+    margin-top: 10em;
     color: #cccccc;
 }
 .footer_if{
@@ -31,10 +30,14 @@ footer
     position: relative;
     right: 7%;
 }
+@media (max-width: 880px){
+    .pwtsl{
+        visibility: hidden;
+    }
+}
 .pwtsl
 {
     padding-top: 2%;
-    
 }
 
 .email{

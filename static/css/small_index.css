@@ -9,7 +9,8 @@ html{
 
 }
 body{
-/*    background: linear-gradient(to bottom, rgba(0,0,0,0), black);
-*/
-    background-size: 100em;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), black);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
