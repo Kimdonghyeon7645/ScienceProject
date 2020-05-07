@@ -1,0 +1,76 @@
+nav{
+    width: 95%;
+    position: relative;
+    top: 270%;
+    left: 2%;
+    margin-top: 30%;
+}
+
+nav .title{
+    text-align: center;
+}
+
+.ele{
+    color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    height: 350px;
+    align-items: center;
+
+    border-collapse: collapse ;
+    padding-right: 2%;
+    padding-left:  2%;
+}   
+
+.ele{
+    border-right: 1px solid #cccccc;
+}
+
+@media (max-width: 980px){
+    .ele:nth-child(10){
+        display: none;
+    }
+}
+
+@media (max-width: 860px){
+    .ele:nth-child(9){
+        display: none;
+    }
+}
+
+@media (max-width: 710px){
+    .ele:nth-child(8){
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .ele:nth-child(7){
+        display: none;
+    }
+}
+
+
+.ele_title{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.ele .mood_img{
+    margin-bottom: 35px;
+}
+
+.ele_temp{
+    font-size: 30px;
+}
+
+.n{
+    margin: 5px;
+}
+
+.props{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

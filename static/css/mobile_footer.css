@@ -1,0 +1,57 @@
+footer
+{
+    position: relative;
+    top: 380%;
+    transform: translate(-5%, -5%);
+    background: linear-gradient(to top, black, 50%, rgba(0,0,0,0));
+    
+    box-sizing: border-box;
+    border-image: radial-gradient(black , #cccccc,  black );
+    border-image-slice: 1;
+    border-style: solid;
+
+    border-image-width: 1% 0 0 0; 
+
+    border-top: 1px white solid;   
+    margin-top: 10em;
+    color: #cccccc;
+}
+.footer_if{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.infomation_user
+{
+    padding-top: 2%;
+    text-align: center;
+    position: relative;
+    right: 7%;
+}
+@media (max-width: 880px){
+    .pwtsl{
+        visibility: hidden;
+    }
+}
+.pwtsl
+{
+    padding-top: 2%;
+}
+
+.email{
+    margin-top: 10px;
+}
+
+.plus
+{
+    display: static;
+    margin-left: 10px;
+}
+
+.github{
+    position: relative;
+    top: 20px;
+    right: 5%;
+}

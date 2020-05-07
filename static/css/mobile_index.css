@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;    
+}
+html{
+    background-image: url(/static/img/rain.svg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+body{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), black);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
