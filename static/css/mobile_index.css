@@ -6,7 +6,7 @@ html{
     background-image: url(/static/img/rain.svg);
     background-attachment: fixed;
     background-size: cover;
-
+    overflow-x: hidden; 
 }
 body{
     background: linear-gradient(to bottom, rgba(0,0,0,0), black);

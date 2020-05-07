@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>학교생활에 날씨를 더하다</title>
 
-    <!-- <link rel="stylesheet" href="/static/css/index.css" media="(min-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/index.css" media="(min-width: 1130px)">
     <link rel="stylesheet" href="/static/css/header.css" media="(min-width: 1130px)">
     <link rel="stylesheet" href="/static/css/content.css" media="(min-width: 1130px)">
     <link rel="stylesheet" href="/static/css/section.css" media="(min-width: 1130px)">
     <link rel="stylesheet" href="/static/css/nav.css" media="(min-width: 1130px)">
-    <link rel="stylesheet" href="/static/css/footer.css" media="(min-width: 1130px)"> -->
+    <link rel="stylesheet" href="/static/css/footer.css" media="(min-width: 1130px)">
 
-    <link rel="stylesheet" href="/static/css/small_index.css" media="(max-width: 1130px)">
-    <link rel="stylesheet" href="/static/css/small_header.css" media="(max-width: 1130px)">
-    <link rel="stylesheet" href="/static/css/small_content .css" media="(max-width: 1130px)">
-    <link rel="stylesheet" href="/static/css/small_section.css" media="(max-width: 1130px)">
-    <link rel="stylesheet" href="/static/css/small_nav.css" media="(max-width: 1130px)">
-    <link rel="stylesheet" href="/static/css/small_footer.css" media="(max-width: 1130px)">
+    <link rel="stylesheet" href="/static/css/small_index.css" media="(max-width: 1130px) and (min-width: 430px)">
+    <link rel="stylesheet" href="/static/css/small_header.css" media="(max-width: 1130px) and (min-width: 430px)">
+    <link rel="stylesheet" href="/static/css/small_content.css" media="(max-width: 1130px) and (min-width: 430px)">
+    <link rel="stylesheet" href="/static/css/small_section.css" media="(max-width: 1130px) and (min-width: 430px)">
+    <link rel="stylesheet" href="/static/css/small_nav.css" media="(max-width: 1130px) and (min-width: 430px)">
+    <link rel="stylesheet" href="/static/css/small_footer.css" media="(max-width: 1130px) and (min-width: 430px)">
+
+    <link rel="stylesheet" href="/static/css/mobile_index.css" media="(max-width: 430px)">
+    <link rel="stylesheet" href="/static/css/mobile_header.css" media="(max-width: 430px)">
+    <link rel="stylesheet" href="/static/css/mobile_content.css" media="(max-width: 430px)">
+    <link rel="stylesheet" href="/static/css/mobile_section.css" media="(max-width: 430px)">
+    <link rel="stylesheet" href="/static/css/mobile_nav.css" media="(max-width: 430px)">
+    <link rel="stylesheet" href="/static/css/mobile_footer.css" media="(max-width: 430px)">
+
 </head>
 
 
@@ -96,9 +104,9 @@
             {% for data in gu0 %}
             {% if data.hour == 6 and data.time_difference < 24 %}
                 {% if data.day_high_temp == -999 %}
-                    <span style="font-size: 35px;">알수없음</span>º
+                    <span class='temp_num'>알수없음</span>º
                 {% else %}
-                    <span style="font-size: 45px;">{{ data.day_high_temp }}</span>º
+                    <span class='temp_num'>{{ data.day_high_temp }}</span>º
                 {% endif %}
             {% endif %}
             {% endfor %}
@@ -107,9 +115,9 @@
             {% for data in gu0 %}
             {% if data.hour == 6 and data.time_difference < 24 %}
                 {% if data.day_low_temp == -999 %}
-                    <span style="font-size: 35px;">알수없음</span>º
+                    <span class='temp_num'>알수없음</span>º
                 {% else %}
-                    <span style="font-size: 45px;">{{ data.day_low_temp }}</span>º
+                    <span class='temp_num'>{{ data.day_low_temp }}</span>º
                 {% endif %}
             {% endif %}
             {% endfor %}
@@ -166,7 +174,7 @@
     <div class="boolean_of_ms">
         {% for data in gu0 %}
             {% if data.hour == 6 and data.time_difference < 24 %}
-            <span style="font-size: 30px;"><p>
+            <p>
                 {% if data.rain_persent >= 70 %}
                     비가 올 날씨네요 :D 실내운동 확정!
                 {% elif data.temp < -3 %}
@@ -192,7 +200,7 @@
                 {% else %}
                     알수없음
                 {% endif %}
-            </p></span>
+            </p>
             {% endif %}
         {% endfor %}
     </div>
@@ -297,7 +305,7 @@
 </section>
 <nav>
     <div class="title">시간대 별</div>
-    <div><img style="width:100%; padding-top: 30px; padding-bottom: 20px" src="static/img/shape.svg"></div>
+    <div><img class='hr_bar' src="static/img/shape.svg"></div>
     <div class="props">
         {% for data in gu0 %}
             {% if data.num < 11 %}
