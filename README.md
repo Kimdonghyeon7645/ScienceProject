@@ -33,8 +33,7 @@ https://www.notion.so/Science_Project-9c3b5deffd7446eda3b27296d446757e
 (백 프론트상 연결이 도무지 안되고, 갈등으로 프론트가 잠수타버리는 바람에 데이터 크롤링파트인 저혼자 장고로 웹구현 하게 됬다는 슬픈 전설..)
 ```
 
-### ver2(2020-4-1) 크롤링과 DB 업데이트 자동화로, 웹의 콘텐츠가 매일 갱신됩니다.
-<a href="#versionUp">개발과정은 아래에 덧붙였습니다.</a>  
+### ver2(2020-4-1) 크롤링과 DB 업데이트 자동화로, 웹의 콘텐츠가 매일 갱신됩니다. 
 3일간의 삽질 끝에 크롤링과 DB 자동 업데이트를 구현했습니다.  
 앞으로 서버 갱신만 한달에 한번씩 확인해준다면(무료계정의 비애),  
 매일매일 그날의 날씨에 맞는 정보를 제공합니다.  
@@ -49,6 +48,10 @@ Django 와 웹에 대해서 학습한 이후에, 백엔드에서 폼의 get 요�
 반복되는 요소를 묶어서 장고의 템플릿 언어 {% for ~ in ~ %} 문으로 처리해 주었습니다.
 > 562 줄 => 355 줄
 
+### ver3.9(2020-5-7) 반응형 웹으로, 컴퓨터 ~ 타블렛 스크린에 맞는 화면을 지원합니다.
+기본 컴퓨터 화면부터 ~ 600px 너비의 화면까지 화면에 맞는 레이아웃으로 지원하게 하였습니다.  
+미디어 쿼리를 사용해서 기존 css 와 타블렛 스크린 css 를 분리했습니다. 
+``` 자세한 내용은 결과 이미지를 참고 ```
 <br>  
 
 
@@ -56,10 +59,19 @@ Django 와 웹에 대해서 학습한 이후에, 백엔드에서 폼의 get 요�
 
 > 링크 : http://bosal.pythonanywhere.com/
 
-<img src="/readme_img/1.png" width="450px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
-<img src="/readme_img/2.png" width="450px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
-<img src="/readme_img/3.png" width="450px" height="auto" title="시간별컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
-<img src="/readme_img/4.png" width="450px" height="auto" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
+#### 기본화면
+<img src="/readme_img/1-1.png" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/1-2.png" width="550px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/1-3.png" width="550px" height="auto" title="시간별컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/1-4.png" width="550px" height="auto" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
+
+#### 타블렛 화면
+<img src="/readme_img/2-1.png" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/2-2.png" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/2-3.png" width="550px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/2-4.png" width="550px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/2-5.png" width="550px" height="auto" title="시간별컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/2-6.png" width="550px" height="auto" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
  
 <br> 
 
@@ -68,7 +80,7 @@ Django 와 웹에 대해서 학습한 이후에, 백엔드에서 폼의 get 요�
 <details>
   <summary>ver 2 개발 노트</summary>
   
-  ## ver 2, 크롤링, DB 업로드 자동화<a name="versionUp"></a>
+  ## ver 2, 크롤링, DB 업로드 자동화
   (2020.3.31.~4.2.)
   pythonanywhere의 database를 python script로 접근, db를 자동으로 업데이트 하는 코드 + 크롤링 자동화까지 개발에 종지부를 찍었습니다.
   
