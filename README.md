@@ -78,6 +78,10 @@ Django 와 웹에 대해서 학습한 이후에, 백엔드에서 폼의 get 요�
 <img src="/readme_img/2-5.png" width="550px" height="auto" title="시간별컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
 <img src="/readme_img/2-6.png" width="550px" height="auto" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
  
+ ### 휴대폰 화면
+<img src="/readme_img/3-1.png" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/3-2.png" width="550px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/3-3.png" width="550px" height="auto" title="시간별컨텐츠_푸터" alt="프로젝트웹사이트캡처"></img><br/>
 <br> 
 
 ## 개발 노트
@@ -135,6 +139,8 @@ Django 와 웹에 대해서 학습한 이후에, 백엔드에서 폼의 get 요�
 
   ## ver 4. 반응형 웹 구현
   (2020-5-6 ~ 2020-5-7)
+
+  <img src="/readme_img/3-1.png" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
   솔직히 처음 웹을 만들었을때, 친구나 가족에게 자랑할려고 링크를 SNS로 보내는데, 하나같이 깨진다고 하더라구요.  
   생각해보니까 맨처음 만들때 반응형으로 웹을 안만들었던 것이였습니다.. 
 
