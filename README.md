@@ -79,9 +79,9 @@ Django 와 웹에 대해서 학습한 이후에, 백엔드에서 폼의 get 요�
 <img src="/readme_img/2-6.png" width="550px" height="auto" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
  
  ### 휴대폰 화면
-<img src="/readme_img/3-1.png" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
-<img src="/readme_img/3-2.png" width="550px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
-<img src="/readme_img/3-3.png" width="550px" height="auto" title="시간별컨텐츠_푸터" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/3-1.jpg" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/3-2.jpg" width="550px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+<img src="/readme_img/3-3.jpg" width="550px" height="auto" title="시간별컨텐츠_푸터" alt="프로젝트웹사이트캡처"></img><br/>
 <br> 
 
 ## 개발 노트
