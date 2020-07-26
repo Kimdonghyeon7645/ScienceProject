@@ -1,4 +1,6 @@
 # ScienceProject
+<img src="https://img.shields.io/github/languages/count/Kimdonghyeon7645/ScienceProject?style=flat-square"> <img src="https://img.shields.io/github/languages/top/Kimdonghyeon7645/ScienceProject?style=flat-square&logo=Python">
+
 ## 과학프로젝트, 날씨에 학교를 더하다
 
 ![화면](https://user-images.githubusercontent.com/48408417/79071603-98d46e80-7d17-11ea-9e33-9983a033374f.gif)
