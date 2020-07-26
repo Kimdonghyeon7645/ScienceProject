@@ -67,10 +67,10 @@ Django 와 웹에 대해서 학습한 이후에, 백엔드에서 폼의 get 요�
 > 링크 : http://bosal.pythonanywhere.com/
 
 #### PC 화면
+<img src="/readme_img/1-1.png" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
 <details>
   <summary>그외...</summary>
- 
-  <img src="/readme_img/1-1.png" width="550px" height="auto" title="메인컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
+  
   <img src="/readme_img/1-2.png" width="550px" height="auto" title="세부정보컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
   <img src="/readme_img/1-3.png" width="550px" height="auto" title="시간별컨텐츠" alt="프로젝트웹사이트캡처"></img><br/>
   <img src="/readme_img/1-4.png" width="550px" height="auto" title="푸터" alt="프로젝트웹사이트캡처"></img><br/>
